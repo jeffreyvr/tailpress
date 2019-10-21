@@ -1,0 +1,37 @@
+{
+  "name": "tailpress",
+  "version": "1.0.0",
+  "description": "Boilerplate WordPress theme with TailwindCSS.",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "gulp serve",
+    "build": "gulp css"
+  },
+  "paths": {
+    "src": {
+      "css": "./src/css/"
+    },
+    "dist": {
+      "base": "./",
+      "proxy": "http://wordpress.test",
+      "css": "./assets/css/"
+    },
+    "config": {
+      "tailwind": "./tailwind.config.js"
+    }
+  },
+  "author": "Jeffrey van Rossum",
+  "theme_uri": "https://github.com/jeffreyvr/tailpress",
+  "author_uri": "https://doubletakepigeon.com",
+  "text_domain": "tailpress",
+  "license": "ISC",
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "tailwindcss": "^1.1.2",
+    "gulp-postcss": "^7.0.0",
+    "autoprefixer": "^8.4.1",
+    "browser-sync": "^2.18.13",
+    "gulp-purgecss": "^0.15.0"
+  }
+}
