@@ -1,37 +1,28 @@
 {
-  "name": "tailpress",
-  "version": "1.0.0",
-  "description": "Boilerplate WordPress theme with TailwindCSS.",
-  "main": "gulpfile.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "gulp serve",
-    "build": "gulp css"
-  },
-  "paths": {
-    "src": {
-      "css": "./src/css/"
-    },
-    "dist": {
-      "base": "./",
-      "proxy": "http://wordpress.test",
-      "css": "./assets/css/"
-    },
-    "config": {
-      "tailwind": "./tailwind.config.js"
-    }
-  },
-  "author": "Jeffrey van Rossum",
-  "theme_uri": "https://github.com/jeffreyvr/tailpress",
-  "author_uri": "https://doubletakepigeon.com",
-  "text_domain": "tailpress",
-  "license": "ISC",
-  "dependencies": {
-    "gulp": "^4.0.2",
-    "tailwindcss": "^1.1.2",
-    "gulp-postcss": "^7.0.0",
-    "autoprefixer": "^8.4.1",
-    "browser-sync": "^2.18.13",
-    "gulp-purgecss": "^0.15.0"
-  }
+	"name": "tailpress",
+	"version": "1.0.0",
+	"description": "Boilerplate WordPress theme with TailwindCSS.",
+	"author": "Jeffrey van Rossum",
+	"theme_uri": "https://github.com/jeffreyvr/tailpress",
+	"author_uri": "https://doubletakepigeon.com",
+	"text_domain": "tailpress",
+	"license": "ISC",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"dev": "npm run development",
+		"development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+		"watch": "npm run development -- --watch",
+		"hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+		"prod": "npm run production",
+		"production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+	},
+	"devDependencies": {
+		"cross-env": "^6.0.3",
+		"laravel-mix": "^5.0.0",
+		"laravel-mix-tailwind": "^0.1.0",
+		"resolve-url-loader": "^3.1.0",
+		"sass": "^1.23.1",
+		"sass-loader": "^8.0.0",
+		"vue-template-compiler": "^2.6.10"
+	}
 }
