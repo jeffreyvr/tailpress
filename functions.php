@@ -13,6 +13,6 @@ if ( ! defined( 'TAILPRESS_VERSION' ) ) {
  * Enqueue scripts
  */
 function tailpress_enqueue_scripts() {
-    wp_enqueue_style( 'tailpress', get_theme_file_uri( 'assets/css/tailpress.css' ), array(), TAILPRESS_VERSION );
+    wp_enqueue_style( 'tailpress', get_theme_file_uri( 'css/tailpress.css' ), array(), TAILPRESS_VERSION );
 }
 add_action( 'wp_enqueue_scripts', 'tailpress_enqueue_scripts' );
