@@ -11401,6 +11401,22 @@ video {
   z-index: auto;
 }
 
+h1 {
+  font-size: 1.5rem;
+}
+
+h2 {
+  font-size: 1.25rem;
+}
+
+h3 {
+  font-size: 1.125rem;
+}
+
+article .entry-content p {
+  margin-bottom: 2rem;
+}
+
 @media (min-width: 640px) {
   .sm\:sr-only {
     position: absolute;
