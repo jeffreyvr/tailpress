@@ -2,6 +2,6 @@ let mix = require('laravel-mix');
 
 require('laravel-mix-tailwind');
 
-mix.js('src/js/tailpress.js', 'assets/js')
-      .sass('src/sass/tailpress.scss', 'assets/css')
+mix.js('resources/js/tailpress.js', 'js')
+      .sass('resources/sass/tailpress.scss', 'css')
       .tailwind();

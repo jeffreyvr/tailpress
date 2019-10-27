@@ -86,10 +86,10 @@
 /************************************************************************/
 /******/ ({
 
-/***/ "./src/js/tailpress.js":
-/*!*****************************!*\
-  !*** ./src/js/tailpress.js ***!
-  \*****************************/
+/***/ "./resources/js/tailpress.js":
+/*!***********************************!*\
+  !*** ./resources/js/tailpress.js ***!
+  \***********************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -97,10 +97,10 @@
 
 /***/ }),
 
-/***/ "./src/sass/tailpress.scss":
-/*!*********************************!*\
-  !*** ./src/sass/tailpress.scss ***!
-  \*********************************/
+/***/ "./resources/sass/tailpress.scss":
+/*!***************************************!*\
+  !*** ./resources/sass/tailpress.scss ***!
+  \***************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -109,14 +109,14 @@
 /***/ }),
 
 /***/ 0:
-/*!*************************************************************!*\
-  !*** multi ./src/js/tailpress.js ./src/sass/tailpress.scss ***!
-  \*************************************************************/
+/*!*************************************************************************!*\
+  !*** multi ./resources/js/tailpress.js ./resources/sass/tailpress.scss ***!
+  \*************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /Applications/MAMP/htdocs/wordpress/wp-content/themes/wptailwind/src/js/tailpress.js */"./src/js/tailpress.js");
-module.exports = __webpack_require__(/*! /Applications/MAMP/htdocs/wordpress/wp-content/themes/wptailwind/src/sass/tailpress.scss */"./src/sass/tailpress.scss");
+__webpack_require__(/*! /Applications/MAMP/htdocs/wordpress/wp-content/themes/wptailwind/resources/js/tailpress.js */"./resources/js/tailpress.js");
+module.exports = __webpack_require__(/*! /Applications/MAMP/htdocs/wordpress/wp-content/themes/wptailwind/resources/sass/tailpress.scss */"./resources/sass/tailpress.scss");
 
 
 /***/ })
