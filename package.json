@@ -18,12 +18,12 @@
 	},
 	"devDependencies": {
 		"cross-env": "^6.0.3",
-		"laravel-mix": "^5.0.0",
+		"laravel-mix": "^5.0.4",
 		"laravel-mix-tailwind": "^0.1.0",
-		"resolve-url-loader": "^3.1.0",
-		"sass": "^1.23.1",
-		"sass-loader": "^8.0.0",
+		"resolve-url-loader": "^3.1.1",
+		"sass": "^1.26.10",
+		"sass-loader": "^8.0.2",
 		"tailwindcss": "^1.6.2",
-		"vue-template-compiler": "^2.6.10"
+		"vue-template-compiler": "^2.6.11"
 	}
 }
