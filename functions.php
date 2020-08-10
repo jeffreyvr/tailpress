@@ -8,10 +8,24 @@ function tailpress_enqueue_scripts() {
 
 	wp_enqueue_script( 'jquery' );
 
-	wp_enqueue_style( 'tailpress', get_theme_file_uri( 'css/tailpress.css' ), array(), $theme->get( 'Version' ) );
-	wp_enqueue_script( 'tailpress', get_theme_file_uri( 'js/tailpress.js' ), array( 'jquery' ), $theme->get( 'Version' ) );
+	wp_enqueue_style( 'tailpress', tailpress_get_mix_compiled_asset_url( '/css/tailpress.css' ), array(), $theme->get( 'Version' ) );
+	wp_enqueue_script( 'tailpress', tailpress_get_mix_compiled_asset_url( '/js/tailpress.js' ), array( 'jquery' ), $theme->get( 'Version' ) );
 }
 add_action( 'wp_enqueue_scripts', 'tailpress_enqueue_scripts' );
+
+/**
+ * Get mix compiled asset.
+ *
+ * @param string $path The path to the asset.
+ * @return string
+ */
+function tailpress_get_mix_compiled_asset_url( $path ) {
+	$mix_file_path = file_get_contents( get_stylesheet_directory() . '/mix-manifest.json' );
+	$manifest      = json_decode( $mix_file_path, true );
+	$asset_path    = ! empty( $manifest[ $path ] ) ? $manifest[ $path ] : $path;
+
+	return get_stylesheet_directory_uri() . '/' . $asset_path;
+}
 
 /**
  * Theme setup
