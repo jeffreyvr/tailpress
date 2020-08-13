@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Enqueue scripts
+ * Enqueue scripts.
  */
 function tailpress_enqueue_scripts() {
 	$theme = wp_get_theme();
@@ -28,7 +28,7 @@ function tailpress_get_mix_compiled_asset_url( $path ) {
 }
 
 /**
- * Theme setup
+ * Theme setup.
  */
 function tailpress_setup() {
 	// Let WordPress manage the document title.
@@ -54,7 +54,7 @@ function tailpress_setup() {
 		)
 	);
 
-	// Adding Thumbnail basic support
+	// Adding Thumbnail basic support.
 	add_theme_support( 'post-thumbnails' );
 }
 add_action( 'after_setup_theme', 'tailpress_setup' );
