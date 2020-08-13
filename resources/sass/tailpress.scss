@@ -17,6 +17,7 @@ h3 {
   @apply text-lg;
 }
 
+/* purgecss start ignore */
 article {
       .entry-content {
             p {
@@ -24,3 +25,4 @@ article {
             }
       }
 }
+/* purgecss end ignore */
