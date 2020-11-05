@@ -4,7 +4,7 @@
 	"description": "Boilerplate WordPress theme with TailwindCSS.",
 	"author": "Jeffrey van Rossum",
 	"theme_uri": "https://github.com/jeffreyvr/tailpress",
-	"author_uri": "https://doubletakepigeon.com",
+	"author_uri": "https://vanrossum.dev",
 	"text_domain": "tailpress",
 	"license": "ISC",
 	"scripts": {
