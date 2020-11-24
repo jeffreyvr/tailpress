@@ -1,5 +1,19 @@
-const plugin = require('tailwindcss/plugin')
+const plugin = require('tailwindcss/plugin');
 const _ = require("lodash");
+
+const tailpress = {
+    colors: {
+        'primary': '#0EA5E9',
+        'secondary': '#14B8A6',
+        'dark': '#1F2937',
+        'light': '#F9FAFB'
+    },
+    fontSizes: {
+        'small': ['14px'],
+        'regular': ['16px'],
+        'large': ['18px', 'bold']
+    }
+};
 
 module.exports = {
     purge: [
@@ -7,19 +21,9 @@ module.exports = {
         './*/*.php',
     ],
     theme: {
-        extend: {},
-        tailpress: {
-            colors: {
-                'primary': '#0EA5E9',
-                'secondary': '#14B8A6',
-                'dark': '#1F2937',
-                'light': '#F9FAFB'
-            },
-            fontSizes: {
-                'small': ['14px'],
-                'regular': ['16px'],
-                'large': ['18px', 'bold']
-            }
+        tailpress,
+        extend: {
+            colors: tailpress.colors
         }
     },
     plugins: [
@@ -106,7 +110,6 @@ module.exports = {
                 respectPrefix: false,
                 respectImportant: false,
             });
-
         }),
     ]
 };
