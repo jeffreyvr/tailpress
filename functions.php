@@ -56,5 +56,70 @@ function tailpress_setup() {
 
 	// Adding Thumbnail basic support.
 	add_theme_support( 'post-thumbnails' );
+
+	// Block editor.
+	add_theme_support( 'align-wide' );
+
+	add_theme_support( 'wp-block-styles' );
+
+	add_theme_support(
+		'editor-color-palette',
+		array(
+			array(
+				'name'  => __( 'Primary', 'tailpress' ),
+				'slug'  => 'primary',
+				'color' => '#0EA5E9',
+			),
+			array(
+				'name'  => __( 'Secondary', 'tailpress' ),
+				'slug'  => 'secondary',
+				'color' => '#14B8A6',
+			),
+			array(
+				'name'  => __( 'Dark', 'tailpress' ),
+				'slug'  => 'dark',
+				'color' => '#1F2937',
+			),
+			array(
+				'name'  => __( 'Light', 'tailpress' ),
+				'slug'  => 'light',
+				'color' => '#F9FAFB',
+			),
+		)
+	);
+
+	add_theme_support( 'editor-font-sizes', array(
+		array(
+			'name' => __( 'Small', 'tailpress' ),
+			'size' => 14,
+			'slug' => 'small'
+		),
+		array(
+			'name' => __( 'Regular', 'tailpress' ),
+			'size' => 16,
+			'slug' => 'regular'
+		),
+		array(
+			'name' => __( 'Large', 'tailpress' ),
+			'size' => 18,
+			'slug' => 'large'
+		)
+	) );
 }
 add_action( 'after_setup_theme', 'tailpress_setup' );
+
+/**
+ * Adds option 'li_class' to 'wp_nav_menu'.
+ *
+ * @param string  $classes String of classes.
+ * @param mixed   $item The curren item.
+ * @param WP_Term $args Holds the nav menu arguments.
+ * @return array
+ */
+function tailpress_nav_menu_add_li_class( $classes, $item, $args ) {
+	if ( isset( $args->li_class ) ) {
+		$classes[] = $args->li_class;
+	}
+	return $classes;
+}
+add_filter( 'nav_menu_css_class', 'tailpress_nav_menu_add_li_class', 1, 3 );

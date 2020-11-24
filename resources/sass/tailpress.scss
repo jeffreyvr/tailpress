@@ -5,24 +5,44 @@
 @tailwind utilities;
 
 // Some general styling
-h1 {
-  @apply text-2xl;
-}
-
-h2 {
-  @apply text-xl;
-}
-
-h3 {
-  @apply text-lg;
-}
-
-/* purgecss start ignore */
 article {
-      .entry-content {
-            p {
-                  @apply mb-8;
-            }
+  .entry-content {
+    h1 {
+      @apply text-2xl;
+    }
+
+    h2 {
+      @apply text-xl;
+    }
+
+    h3 {
+      @apply text-lg;
+    }
+
+    p,
+    ul,
+    ol {
+      @apply mb-8;
+
+      a {
+        @apply text-blue-500 underline;
+
+        &:hover {
+          @apply no-underline;
+        }
       }
+    }
+
+    ul {
+      li {
+        @apply list-disc list-inside;
+      }
+    }
+
+    ol {
+      li {
+        @apply list-decimal list-inside;
+      }
+    }
+  }
 }
-/* purgecss end ignore */

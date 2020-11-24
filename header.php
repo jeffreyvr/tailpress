@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html <?php language_attributes(); ?> class="no-js">
+<html <?php language_attributes(); ?>>
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width">
@@ -9,57 +9,72 @@
 	<?php wp_head(); ?>
 </head>
 
-<body <?php body_class(); ?>>
+<body <?php body_class( 'bg-white text-gray-900 antialiased' ); ?>>
 
 <?php do_action( 'tailpress_site_before' ); ?>
 
-<div id="page" class="max-w-xl md:max-w-4xl mx-auto">
+<div id="page" class="min-h-screen flex flex-col">
 
 	<?php do_action( 'tailpress_header' ); ?>
 
-	<header class="flex justify-between mt-8 md:mt-12 mb-8 sm:mb-12 md:mb-16 px-4 md:px-12 lg:pl-24 lg:pr-16">
+	<header>
 
-		<div>
-			<?php if ( has_custom_logo() ) { ?>
+		<div class="lg:flex lg:justify-between lg:items-center mx-auto container border-b py-8">
+			<div class="flex justify-between">
+				<div>
+					<?php if ( has_custom_logo() ) { ?>
+						<a href="<?php echo get_bloginfo( 'url' ); ?>">
+							<?php the_custom_logo(); ?>
+						</a>
 
-				<a href="<?php echo get_bloginfo( 'url' ); ?>">
-					<?php the_custom_logo(); ?>
-				</a>
+					<?php } else { ?>
+						<div class="text-lg uppercase">
+							<a href="<?php echo get_bloginfo( 'url' ); ?>" class="font-extrabold text-lg uppercase">
+								<?php echo get_bloginfo( 'name' ); ?>
+							</a>
+						</div>
 
-			<?php } else { ?>
+						<p class="text-sm font-light text-gray-600">
+							<?php echo get_bloginfo( 'description' ); ?>
+						</p>
 
-				<div class="text-lg uppercase">
-					<a href="<?php echo get_bloginfo( 'url' ); ?>">
-						<?php echo get_bloginfo( 'name' ); ?>
-					</a>
+					<?php } ?>
 				</div>
 
-				<p class="text-sm font-bold text-gray-600">
-					<?php echo get_bloginfo( 'description' ); ?>
-				</p>
+				<div class="lg:hidden">
+					<a href="#" id="primary-menu-toggle" class="bg-gray-700 border-b-3 border-gray-900 text-white uppercase font-semibold p-2">MENU</a>
+				</div>
+			</div>
 
-			<?php } ?>
-		</div>
-
-		<div class="md:hidden">
-			<a href="#" id="primary-menu-toggle" class="bg-gray-700 border-b-3 border-gray-900 text-white uppercase tracking-wider font-semibold p-2">MENU</a>
+			<?php
+				wp_nav_menu(
+					array(
+						'container_id'    => 'primary-menu',
+						'container_class' => 'hidden lg:block',
+						'menu_class'      => 'lg:flex lg:-mx-4',
+						'theme_location'  => 'primary',
+						'li_class'        => 'lg:mx-4',
+						'fallback_cb'     => false,
+					)
+				);
+				?>
 		</div>
 
 	</header>
 
-	<div id="content" class="site-content md:flex pb-12">
+	<div id="content" class="site-content flex-grow">
+
+		<!-- Start introduction -->
+		<?php if ( is_front_page() ) : ?>
+		<div class="container mx-auto my-12 border-b pb-12">
+			<h1 class="font-bold text-lg text-green-500 uppercase">TailPress</h1>
+			<h2 class="text-7xl tracking-tight font-extrabold my-4">Rapidly build your WordPress theme with <a href="https://tailwindcss.com" class="text-blue-400">TailwindCSS</a> and <a href="https://laravel-mix.com" class="text-blue-400">Laravel Mix</a>.</h2>
+			<p class="max-w-screen-lg text-gray-700 text-lg sm:text-2xl sm:leading-10 font-medium mb-10 sm:mb-11">TailPress is your go-to starting point for developing WordPress themes with TailwindCSS and comes with basic block-editor support out of the box.</p>
+			<a href="https://github.com/jeffreyvr/tailpress" class="w-full sm:w-auto flex-none bg-gray-900 text-white text-lg leading-6 font-semibold py-3 px-6 border border-transparent rounded-xl focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-gray-900 focus:outline-none transition-colors duration-200">View on Github</a>
+		</div>
+		<!-- End introduction -->
+		<?php endif; ?>
 
 		<?php do_action( 'tailpress_content_start' ); ?>
 
-		<?php
-			wp_nav_menu(
-				array(
-					'container_id'    => 'primary-menu',
-					'container_class' => 'hidden md:block w-1/1 lg:w-1/5 leading-loose',
-					'menu_class'      => 'border-r border-gray-200 px-8 py-4 md:py-0 mb-16 text-left md:text-right bg-gray-700 text-white md:bg-white md:text-gray-900 block',
-					'theme_location'  => 'primary',
-				)
-			);
-			?>
-
-		<main class="flex-1 min-w-0 px-4 md:px-12 lg:pl-24 lg:pr-16">
+		<main>

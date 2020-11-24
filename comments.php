@@ -9,7 +9,7 @@ if ( post_password_required() ) {
 }
 ?>
 
-<div id="comments" class="comments-area">
+<div id="comments" class="comments-area my-8">
 
 	<?php if ( have_comments() ) : ?>
 		<h2 class="comments-title">
@@ -65,7 +65,7 @@ if ( post_password_required() ) {
 	<?php
 	comment_form(
 		array(
-			'class_submit'  => 'bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4',
+			'class_submit'  => 'bg-blue-400 hover:bg-blue-500 text-white cursor-pointer rounded font-bold py-2 px-4',
 			'comment_field' => '<textarea id="comment" name="comment" class="bg-gray-200 w-full py-2 px-3" aria-required="true"></textarea>',
 		)
 	);

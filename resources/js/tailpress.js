@@ -1,8 +1,11 @@
 // Navigation toggle
 jQuery(document).ready(function () {
+
+      const main_navigation = jQuery('#primary-menu');
+
       jQuery('#primary-menu-toggle').on('click', function (e) {
             e.preventDefault();
 
-            jQuery('#primary-menu').toggle();
+            main_navigation.toggle();
       });
 });
