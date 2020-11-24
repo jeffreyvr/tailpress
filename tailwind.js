@@ -22,9 +22,16 @@ module.exports = {
     ],
     theme: {
         tailpress,
+        container: {
+            padding: {
+                DEFAULT: '1rem',
+                sm: '2rem',
+                lg: '0rem'
+            },
+        },
         extend: {
             colors: tailpress.colors
-        }
+        },
     },
     plugins: [
         plugin(function ({ addUtilities, addComponents, e, prefix, config, theme }) {
