@@ -7,9 +7,18 @@ A minimal boilerplate theme for WordPress using [TailwindCSS](https://tailwindcs
 * Run `npm run dev`
 * Run `npm run watch` to start developing
 
-## Links
-* [TailwindCSS Documentation](https://tailwindcss.com/docs)
-* [Laravel Mix Documentation](https://laravel-mix.com/docs)
+## Block editor support
+Out of the box, TailPress comes with basic support for the block editor. It will for example automatically generate alignment classes, text color classes, background color classes. You can modify this within the `tailwind.js` file. In addition, the `editor-style.css` will be loaded within the block editor to have a editing experiences that is in line with the front end. You can specify the editor style within `resources/sass/editor-style.scss`.
+
+### Define theme colors
+
+To get you started, four colors are set from the beginning. Being a primary, secondary, dark and light color.
+
+You can define the colors within the `tailpress.colors` property in `tailwind.js`. Make sure to also define these colors within the `editor-color-palette` (`functions.php`).
+
+### Define theme font sizes
+
+You can define the font sizes within the `tailpress.fontSizes` property in `tailwind.js`. Make sure to also define these sizes within the `editor-font-sizes` (`functions.php`).
 
 ## PurgeCSS
 By default, PurgeCSS is enabled. You can modify or disable it by changing the settings in the `tailwind.js` file. There are several [PurgeCSS options](https://tailwindcss.com/docs/optimizing-for-production#purge-css-options).
@@ -22,3 +31,7 @@ If that is the case try to run:
 ```
 npm install --legacy-peer-deps
 ```
+
+## Links
+* [TailwindCSS Documentation](https://tailwindcss.com/docs)
+* [Laravel Mix Documentation](https://laravel-mix.com/docs)
