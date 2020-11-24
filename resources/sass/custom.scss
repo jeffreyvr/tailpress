@@ -1,41 +1,39 @@
-article {
-    .entry-content {
-      h1 {
+.entry-content {
+    h1 {
         @apply text-2xl;
-      }
+    }
 
-      h2 {
+    h2 {
         @apply text-xl;
-      }
+    }
 
-      h3 {
+    h3 {
         @apply text-lg;
-      }
+    }
 
-      p,
-      ul,
-      ol {
+    p,
+    ul,
+    ol {
         @apply mb-8;
 
         a {
-          @apply text-blue-500 underline;
+            @apply text-blue-500 underline;
 
-          &:hover {
-            @apply no-underline;
-          }
+            &:hover {
+                @apply no-underline;
+            }
         }
-      }
-
-      ul {
-        li {
-          @apply list-disc list-inside;
-        }
-      }
-
-      ol {
-        li {
-          @apply list-decimal list-inside;
-        }
-      }
     }
-  }
+
+    ul {
+        li {
+            @apply list-disc list-inside;
+        }
+    }
+
+    ol {
+        li {
+            @apply list-decimal list-inside;
+        }
+    }
+}

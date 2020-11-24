@@ -63,6 +63,10 @@ function tailpress_setup() {
 
 	add_theme_support( 'wp-block-styles' );
 
+	add_theme_support( 'editor-styles' );
+	// add_editor_style( tailpress_get_mix_compiled_asset_url( 'css/app.css' ) );
+	add_editor_style();
+
 	add_theme_support(
 		'editor-color-palette',
 		array(
