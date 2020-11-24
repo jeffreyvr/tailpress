@@ -8,7 +8,7 @@ A minimal boilerplate theme for WordPress using [TailwindCSS](https://tailwindcs
 * Run `npm run watch` to start developing
 
 ## Block editor support
-Out of the box, TailPress comes with basic support for the block editor. It will for example automatically generate alignment classes, text color classes, background color classes. You can modify this within the `tailwind.js` file. In addition, the `editor-style.css` will be loaded within the block editor to have a editing experiences that is in line with the front end. You can specify the editor style within `resources/sass/editor-style.scss`.
+Out of the box, TailPress comes with basic support for the [block editor](https://wordpress.org/support/article/wordpress-editor/). It will, for example, automatically generate alignment classes, text color classes and background color classes. You can modify this within the `tailwind.js` file. In addition, a `editor-style.css` will be generated and loaded within the block editor to make the editing experiences more in line with the front end styling. You can specify the editor style within `resources/sass/editor-style.scss`.
 
 ### Define theme colors
 
