@@ -1,27 +1,21 @@
 const plugin = require('tailwindcss/plugin');
 const _ = require("lodash");
-
-const tailpress = {
-    colors: {
-        'primary': '#0EA5E9',
-        'secondary': '#14B8A6',
-        'dark': '#1F2937',
-        'light': '#F9FAFB'
-    },
-    fontSizes: {
-        'small': ['14px'],
-        'regular': ['16px'],
-        'large': ['18px', 'bold']
-    }
-};
+const tailpress = require('./tailpress.json');
 
 module.exports = {
-    purge: [
-        './*.php',
-        './*/*.php',
-    ],
+    tailpress,
+    purge: {
+        content: [
+            './*.php',
+            './*/*.php',
+        ],
+        options: {
+            safelist: {
+                standard: [/^has-/, /^align/, /^wp-/]
+            }
+        }
+    },
     theme: {
-        tailpress,
         container: {
             padding: {
                 DEFAULT: '1rem',
@@ -34,13 +28,13 @@ module.exports = {
         },
     },
     plugins: [
-        plugin(function ({ addUtilities, addComponents, e, prefix, config, theme }) {
+        plugin(function ({addUtilities, addComponents, e, prefix, config, theme}) {
             const colors = theme('colors');
             const margin = theme('margin');
             const screens = theme('screens');
             const fontSize = theme('fontSize');
 
-            const editorColorText = _.map(theme("tailpress.colors", {}), (value, key) => {
+            const editorColorText = _.map(config("tailpress.colors", {}), (value, key) => {
                 return {
                     [`.has-${key}-text-color`]: {
                         color: value,
@@ -48,7 +42,7 @@ module.exports = {
                 };
             });
 
-            const editorColorBackground = _.map(theme("tailpress.colors", {}), (value, key) => {
+            const editorColorBackground = _.map(config("tailpress.colors", {}), (value, key) => {
                 return {
                     [`.has-${key}-background-color`]: {
                         backgroundColor: value,
@@ -56,7 +50,7 @@ module.exports = {
                 };
             });
 
-            const editorFontSizes = _.map(theme("tailpress.fontSizes", {}), (value, key) => {
+            const editorFontSizes = _.map(config("tailpress.fontSizes", {}), (value, key) => {
                 return {
                     [`.has-${key}-font-size`]: {
                         fontSize: value[0],

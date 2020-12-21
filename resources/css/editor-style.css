@@ -1,8 +1,7 @@
-@tailwind components;
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
 
-@tailwind utilities;
-
-@import 'custom.scss';
+@import "custom.css";
 
 .block-editor__typewriter {
     @apply font-sans entry-content;

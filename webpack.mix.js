@@ -1,10 +1,19 @@
 let mix = require('laravel-mix');
+let path = require('path');
 
-require('laravel-mix-tailwind');
+mix.setPublicPath(path.resolve('./'));
 
-mix.setPublicPath(path.resolve('./'))
-    .js('resources/js/app.js', 'js')
-    .sass('resources/sass/app.scss', 'css')
-    .sass('resources/sass/editor-style.scss', 'editor-style.css')
-    .tailwind()
-    .version();
+mix.js('resources/js/app.js', 'js');
+
+mix.postCss("resources/css/app.css", "css");
+mix.postCss("resources/css/editor-style.css", "/");
+
+mix.options({
+    postCss: [
+        require('postcss-import'),
+        require('tailwindcss'),
+        require('autoprefixer'),
+    ]
+});
+
+mix.version();
