@@ -16,4 +16,11 @@ mix.options({
     ]
 });
 
+// mix.browserSync({
+//     proxy: 'http://your-website.test',
+//     host: 'your-website.test',
+//     open: 'external',
+//     port: 8000
+// });
+
 mix.version();

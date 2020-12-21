@@ -6,6 +6,6 @@ jQuery(document).ready(function () {
       jQuery('#primary-menu-toggle').on('click', function (e) {
             e.preventDefault();
 
-            main_navigation.toggle();
+            main_navigation.toggleClass('hidden');
       });
 });
