@@ -1,12 +1,16 @@
 {
 	"name": "tailpress",
-	"version": "0.0.2",
+	"version": "0.0.3",
 	"description": "Boilerplate WordPress theme with TailwindCSS.",
 	"author": "Jeffrey van Rossum",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/jeffreyvr/tailpress"
+	},
 	"theme_uri": "https://github.com/jeffreyvr/tailpress",
 	"author_uri": "https://vanrossum.dev",
 	"text_domain": "tailpress",
-	"license": "ISC",
+	"license": "GPL-2.0",
 	"scripts": {
 		"development": "mix",
 		"dev": "mix",
@@ -18,7 +22,7 @@
 	"devDependencies": {
 		"autoprefixer": "^10.1.0",
 		"browser-sync": "^2.26.13",
-		"browser-sync-webpack-plugin": "^2.2.2",
+		"browser-sync-webpack-plugin": "^2.3.0",
 		"cross-env": "^6.0.3",
 		"laravel-mix": "^6.0.2",
 		"postcss": "^8.2.1",
