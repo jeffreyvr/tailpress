@@ -10,6 +10,8 @@ mix.postCss("resources/css/editor-style.css", "/");
 
 mix.options({
     postCss: [
+        require('postcss-nested-ancestors'),
+        require('postcss-nested'),
         require('postcss-import'),
         require('tailwindcss'),
         require('autoprefixer'),

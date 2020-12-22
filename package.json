@@ -30,5 +30,8 @@
 		"postcss-nested": "^5.0.3",
 		"resolve-url-loader": "^3.1.2",
 		"tailwindcss": "^2.0.2"
+	},
+	"dependencies": {
+		"postcss-nested-ancestors": "^2.0.0"
 	}
 }
