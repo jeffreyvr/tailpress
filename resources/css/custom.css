@@ -11,9 +11,7 @@
         @apply text-lg;
     }
 
-    p,
-    ul,
-    ol {
+    p, ul, ol {
         @apply mb-8;
 
         a {
