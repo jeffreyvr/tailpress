@@ -557,43 +557,6 @@ video {
 	--tw-ring-offset-shadow: 0 0 #0000;
 	--tw-ring-shadow: 0 0 #0000;
 }
-    .entry-content h1 {
-	font-size: 1.5rem;
-	line-height: 2rem;
-}
-    .entry-content h2 {
-	font-size: 1.25rem;
-	line-height: 1.75rem;
-}
-    .entry-content h3 {
-	font-size: 1.125rem;
-	line-height: 1.75rem;
-}
-    .entry-content p a:hover, .entry-content ul a:hover, .entry-content ol a:hover {
-	text-decoration: none;
-}
-    .entry-content p a, .entry-content ul a, .entry-content ol a {
-	--tw-text-opacity: 1;
-	color: rgba(59, 130, 246, var(--tw-text-opacity));
-}
-    .entry-content p a, .entry-content ul a, .entry-content ol a {
-	text-decoration: underline;
-}
-    .entry-content p, .entry-content ul, .entry-content ol {
-	margin-bottom: 2rem;
-}
-    .entry-content ul li {
-	list-style-position: inside;
-}
-    .entry-content ul li {
-	list-style-type: disc;
-}
-    .entry-content ol li {
-	list-style-position: inside;
-}
-    .entry-content ol li {
-	list-style-type: decimal;
-}
 .container {
 	width: 100%;
 	padding-right: 1rem;
@@ -902,6 +865,43 @@ video {
 }
 .duration-200 {
 	transition-duration: 200ms;
+}
+.entry-content h1, .block-editor__typewriter h1 {
+	font-size: 1.5rem;
+	line-height: 2rem;
+}
+.entry-content h2, .block-editor__typewriter h2 {
+	font-size: 1.25rem;
+	line-height: 1.75rem;
+}
+.entry-content h3, .block-editor__typewriter h3 {
+	font-size: 1.125rem;
+	line-height: 1.75rem;
+}
+.entry-content p a:hover, .entry-content ul a:hover, .entry-content ol a:hover, .block-editor__typewriter p a:hover, .block-editor__typewriter ul a:hover, .block-editor__typewriter ol a:hover {
+	text-decoration: none;
+}
+.entry-content p a, .entry-content ul a, .entry-content ol a, .block-editor__typewriter p a, .block-editor__typewriter ul a, .block-editor__typewriter ol a {
+	--tw-text-opacity: 1;
+	color: rgba(59, 130, 246, var(--tw-text-opacity));
+}
+.entry-content p a, .entry-content ul a, .entry-content ol a, .block-editor__typewriter p a, .block-editor__typewriter ul a, .block-editor__typewriter ol a {
+	text-decoration: underline;
+}
+.entry-content p, .entry-content ul, .entry-content ol, .block-editor__typewriter p, .block-editor__typewriter ul, .block-editor__typewriter ol {
+	margin-bottom: 2rem;
+}
+.entry-content ul li, .block-editor__typewriter ul li {
+	list-style-position: inside;
+}
+.entry-content ul li, .block-editor__typewriter ul li {
+	list-style-type: disc;
+}
+.entry-content ol li, .block-editor__typewriter ol li {
+	list-style-position: inside;
+}
+.entry-content ol li, .block-editor__typewriter ol li {
+	list-style-type: decimal;
 }
 .focus\:outline-none:focus {
 	outline: 2px solid transparent;

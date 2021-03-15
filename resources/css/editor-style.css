@@ -1,22 +1,6 @@
+/* @import "tailwindcss/base"; */
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
 @import "custom.css";
-
-@layer editor {
-    .block-editor__typewriter {
-        @apply font-sans entry-content;
-    }
-
-    .wp-block{
-        @apply max-w-screen-lg;
-    }
-
-    .wp-block[data-align=wide] {
-        @apply max-w-screen-xl;
-    }
-
-    .wp-block[data-align=full] {
-        @apply max-w-full;
-    }
-}
+@import "block-editor.css";

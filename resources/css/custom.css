@@ -1,39 +1,37 @@
-@layer base {
-    .entry-content {
-        h1 {
-            @apply text-2xl;
-        }
+.entry-content, .block-editor__typewriter {
+    h1 {
+        @apply text-2xl;
+    }
 
-        h2 {
-            @apply text-xl;
-        }
+    h2 {
+        @apply text-xl;
+    }
 
-        h3 {
-            @apply text-lg;
-        }
+    h3 {
+        @apply text-lg;
+    }
 
-        p, ul, ol {
-            @apply mb-8;
+    p, ul, ol {
+        @apply mb-8;
 
-            a {
-                @apply text-blue-500 underline;
+        a {
+            @apply text-blue-500 underline;
 
-                &:hover {
-                    @apply no-underline;
-                }
+            &:hover {
+                @apply no-underline;
             }
         }
+    }
 
-        ul {
-            li {
-                @apply list-disc list-inside;
-            }
+    ul {
+        li {
+            @apply list-disc list-inside;
         }
+    }
 
-        ol {
-            li {
-                @apply list-decimal list-inside;
-            }
+    ol {
+        li {
+            @apply list-decimal list-inside;
         }
     }
 }
