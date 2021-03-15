@@ -16,7 +16,7 @@ mix.options({
         require('postcss-nested-ancestors'),
         require('postcss-nested'),
         require('postcss-import'),
-        require('tailwindcss'),
+        require('@tailwindcss/jit'),
         require('autoprefixer'),
     ]
 });
