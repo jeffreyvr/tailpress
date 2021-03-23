@@ -25,6 +25,12 @@ Four colors (primary, secondary, dark and light) are defined from the beginning.
 ### Define theme font sizes
 You can modify the font sizes within `tailpress.json`.
 
+## JIT
+[Tailwind CSS JIT](https://github.com/tailwindlabs/tailwindcss-jit) is used to allow for fast compiling.
+
+If you prefer to use the regular Tailwind CSS instead, you can change to that dependency in `package.json` as was done up to TailPress v0.0.7 ([example](https://github.com/jeffreyvr/tailpress/blob/0.0.7/package.json#L33)).
+Also make sure to you change the PostCSS plugins in `webpack.mix.js` ([example](https://github.com/jeffreyvr/tailpress/blob/0.0.7/webpack.mix.js#L16)).
+
 ## PurgeCSS
 By default, PurgeCSS is enabled. You can modify or disable it by changing the settings in the `tailwind.config.js` file. There are several [PurgeCSS options](https://tailwindcss.com/docs/optimizing-for-production#purge-css-options).
 
