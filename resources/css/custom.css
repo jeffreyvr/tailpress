@@ -1,4 +1,4 @@
-.entry-content, .block-editor__typewriter {
+.entry-content, .block-editor-block-list__layout {
     h1 {
         @apply text-2xl;
     }
@@ -8,7 +8,7 @@
     }
 
     h3 {
-        @apply text-lg;
+        @apply text-lg ;
     }
 
     p, ul, ol {
