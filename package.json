@@ -30,6 +30,7 @@
 		"postcss-import": "^14.0.0",
 		"postcss-nested": "^5.0.3",
 		"postcss-nested-ancestors": "^2.0.0",
-		"resolve-url-loader": "^3.1.2"
+		"resolve-url-loader": "^3.1.2",
+		"tailwindcss": "^2.0.4"
 	}
 }
