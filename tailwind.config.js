@@ -9,12 +9,8 @@ module.exports = {
         content: [
             './*.php',
             './*/*.php',
+            './safelist.txt'
         ],
-        options: {
-            safelist: {
-                standard: [/^has-/, /^align/, /^wp-/]
-            }
-        }
     },
     theme: {
         container: {
