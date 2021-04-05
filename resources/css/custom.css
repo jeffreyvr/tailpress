@@ -8,12 +8,10 @@
     }
 
     h3 {
-        @apply text-lg ;
+        @apply text-lg;
     }
 
     p, ul, ol {
-        @apply mb-8;
-
         a {
             @apply text-blue-500 underline;
 
@@ -21,6 +19,8 @@
                 @apply no-underline;
             }
         }
+
+        @apply mb-8;
     }
 
     ul {

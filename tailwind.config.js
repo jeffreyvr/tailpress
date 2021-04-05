@@ -3,6 +3,7 @@ const _ = require("lodash");
 const tailpress = require('./tailpress.json');
 
 module.exports = {
+    mode: 'jit',
     tailpress,
     purge: {
         content: [

@@ -20,7 +20,6 @@
 		"production": "mix --production"
 	},
 	"devDependencies": {
-		"@tailwindcss/jit": "^0.1.1",
 		"autoprefixer": "^10.2.4",
 		"browser-sync": "^2.26.14",
 		"browser-sync-webpack-plugin": "^2.3.0",
@@ -31,6 +30,6 @@
 		"postcss-nested": "^5.0.3",
 		"postcss-nested-ancestors": "^2.0.0",
 		"resolve-url-loader": "^3.1.2",
-		"tailwindcss": "^2.0.4"
+		"tailwindcss": "^2.1.0"
 	}
 }
