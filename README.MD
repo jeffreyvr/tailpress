@@ -1,5 +1,7 @@
-# TailPress
-A minimal boilerplate theme for WordPress using [TailwindCSS](https://tailwindcss.com/), with [PostCSS](https://postcss.org) and [Laravel Mix](https://laravel-mix.com/).
+<p><img src="https://tailpress.io/images/logo.svg" width="200" alt="Laravel Mix"></p>
+
+# Introduction
+TailPress is a minimal boilerplate theme for WordPress using [TailwindCSS](https://tailwindcss.com/), with [PostCSS](https://postcss.org) and [Laravel Mix](https://laravel-mix.com/).
 
 ## Getting started
 * Clone repo `git clone https://github.com/jeffreyvr/tailpress.git && cd tailpress`
@@ -26,10 +28,7 @@ Four colors (primary, secondary, dark and light) are defined from the beginning.
 You can modify the font sizes within `tailpress.json`.
 
 ## JIT
-[Tailwind CSS JIT](https://github.com/tailwindlabs/tailwindcss-jit) is used to allow for fast compiling.
-
-If you prefer to use the regular Tailwind CSS instead, you can change to that dependency in `package.json` as was done up to TailPress v0.0.7 ([example](https://github.com/jeffreyvr/tailpress/blob/0.0.7/package.json#L33)).
-Also make sure to you change the PostCSS plugins in `webpack.mix.js` ([example](https://github.com/jeffreyvr/tailpress/blob/0.0.7/webpack.mix.js#L16)).
+[Tailwind CSS JIT](https://tailwindcss.com/docs/just-in-time-mode#enabling-jit-mode) is used to allow for fast compiling.
 
 ## PurgeCSS
 By default, PurgeCSS is enabled. You can modify or disable it by changing the settings in the `tailwind.config.js` file. There are several [PurgeCSS options](https://tailwindcss.com/docs/optimizing-for-production#purge-css-options).
@@ -42,4 +41,7 @@ By default, PurgeCSS is enabled. You can modify or disable it by changing the se
 
 ## Contributors
 * [Jeffrey van Rossum](https://github.com/jeffreyvr)
-* [All contributers](https://github.com/jeffreyvr/tailpress/graphs/contributors)
+* [All contributors](https://github.com/jeffreyvr/tailpress/graphs/contributors)
+
+## License
+GNU GPL version 2. Please see the [License File](/LICENSE) for more information.
