@@ -1,11 +1,8 @@
 // Navigation toggle
-jQuery(document).ready(function () {
-
-      const main_navigation = jQuery('#primary-menu');
-
-      jQuery('#primary-menu-toggle').on('click', function (e) {
+window.addEventListener('load', function () {
+      let main_navigation = document.querySelector('#primary-menu');
+      document.querySelector('#primary-menu-toggle').addEventListener('click', function (e) {
             e.preventDefault();
-
-            main_navigation.toggleClass('hidden');
-      });
+            main_navigation.classList.toggle('hidden');
+      })
 });
