@@ -1,7 +1,7 @@
-has-primary-text-color
-has-secondary-text-color
-has-dark-text-color
-has-light-text-color
+has-primary-color
+has-secondary-color
+has-dark-color
+has-light-color
 has-primary-background-color
 has-secondary-background-color
 has-dark-background-color
