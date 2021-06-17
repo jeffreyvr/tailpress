@@ -44,4 +44,4 @@ By default, PurgeCSS is enabled. You can modify or disable it by changing the se
 * [All contributors](https://github.com/jeffreyvr/tailpress/graphs/contributors)
 
 ## License
-GNU GPL version 2. Please see the [License File](/LICENSE) for more information.
+MIT. Please see the [License File](/LICENSE) for more information.
