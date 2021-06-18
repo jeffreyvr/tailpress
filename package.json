@@ -1,6 +1,6 @@
 {
 	"name": "tailpress",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"description": "Boilerplate WordPress theme with TailwindCSS.",
 	"author": "Jeffrey van Rossum",
 	"repository": {
