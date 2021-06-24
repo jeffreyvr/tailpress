@@ -13,7 +13,6 @@ module.exports = {
             './comments.php',
             './header.php',
             './footer.php',
-            './footer.php',
             './single.php',
             './index.php',
             './404.php',
