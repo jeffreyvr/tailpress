@@ -23,7 +23,8 @@ mix.options({
 //     proxy: 'http://your-website.test',
 //     host: 'your-website.test',
 //     open: 'external',
-//     port: 8000
+//     port: 8000,
+//     injectChanges: false
 // });
 
 mix.version();
