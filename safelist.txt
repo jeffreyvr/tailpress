@@ -1,14 +1,3 @@
-has-primary-color
-has-secondary-color
-has-dark-color
-has-light-color
-has-primary-background-color
-has-secondary-background-color
-has-dark-background-color
-has-light-background-color
-has-small-font-size
-has-regular-font-size
-has-large-font-size
 alignfull
 alignwide
 alignnone
