@@ -23,15 +23,10 @@ module.exports = {
     mode: 'jit',
     purge: {
         content: [
-            './template-parts/*.php',
+            './theme/*.php',
+            './theme/**/*.php',
             './resources/css/*.css',
             './resources/js/*.js',
-            './comments.php',
-            './header.php',
-            './footer.php',
-            './single.php',
-            './index.php',
-            './404.php',
             './safelist.txt'
         ],
     },

@@ -1,4 +1,4 @@
-<?php get_header(); ?>
+<?php tailpress()->get_header(); ?>
 
 <div class="container mx-auto my-8">
 
@@ -8,7 +8,7 @@
 			the_post();
 			?>
 
-			<?php get_template_part( 'template-parts/content', get_post_format() ); ?>
+			<?php TailPress::get_template_part( 'template-parts/content', get_post_format() ); ?>
 
 		<?php endwhile; ?>
 
@@ -17,4 +17,4 @@
 </div>
 
 <?php
-get_footer();
+tailpress()->get_footer();
