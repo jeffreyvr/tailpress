@@ -8,7 +8,7 @@
 			the_post();
 			?>
 
-			<?php TailPress::get_template_part( 'template-parts/content', get_post_format() ); ?>
+			<?php tailpress()->get_template_part( 'template-parts/content', get_post_format() ); ?>
 
 		<?php endwhile; ?>
 
