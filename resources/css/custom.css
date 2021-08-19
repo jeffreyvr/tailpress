@@ -23,7 +23,7 @@
         @apply mb-8;
     }
 
-    ul {
+    ul:not(.block-editor-block-variation-picker__variations) {
         li {
             @apply list-disc list-inside;
         }

@@ -1,10 +1,26 @@
 const plugin = require('tailwindcss/plugin');
 const _ = require("lodash");
-const tailpress = require('./tailpress.json');
+const theme = require('./theme.json');
+
+function tailpress(path) {
+    let object = theme;
+    return path.split('.').reduce(function(previous, current) {
+        return previous ? previous[current] : null
+    }, object || self);
+}
+
+function tailpress_map_colors(colors) {
+    let result = {};
+
+    colors.forEach(function(color) {
+        result[''+color.slug+''] = color.color;
+    });
+
+    return result;
+}
 
 module.exports = {
     mode: 'jit',
-    tailpress,
     purge: {
         content: [
             './template-parts/*.php',
@@ -28,8 +44,14 @@ module.exports = {
             },
         },
         extend: {
-            colors: tailpress.colors
+            colors: tailpress_map_colors(tailpress('settings.color.palette'))
         },
+        screens: {
+            'sm': '640px',
+            'md': '768px',
+            'lg': '1024px',
+            'xl': tailpress('settings.layout.wideSize')
+        }
     },
     plugins: [
         plugin(function ({addUtilities, addComponents, e, prefix, config, theme}) {
@@ -37,31 +59,6 @@ module.exports = {
             const margin = theme('margin');
             const screens = theme('screens');
             const fontSize = theme('fontSize');
-
-            const editorColorText = _.map(config("tailpress.colors", {}), (value, key) => {
-                return {
-                    [`.has-${key}-color`]: {
-                        color: value,
-                    },
-                };
-            });
-
-            const editorColorBackground = _.map(config("tailpress.colors", {}), (value, key) => {
-                return {
-                    [`.has-${key}-background-color`]: {
-                        backgroundColor: value,
-                    },
-                };
-            });
-
-            const editorFontSizes = _.map(config("tailpress.fontSizes", {}), (value, key) => {
-                return {
-                    [`.has-${key}-font-size`]: {
-                        fontSize: value[0],
-                        fontWeight: `${value[1] || 'normal'}`
-                    },
-                };
-            });
 
             const alignmentUtilities = {
                 '.alignfull': {
@@ -111,7 +108,7 @@ module.exports = {
                 },
             };
 
-            addUtilities([editorColorText, editorColorBackground, alignmentUtilities, editorFontSizes, imageCaptions], {
+            addUtilities([alignmentUtilities, imageCaptions], {
                 respectPrefix: false,
                 respectImportant: false,
             });

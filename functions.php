@@ -118,8 +118,8 @@ function tailpress_setup() {
 		$tailpress['fontSizes']
 	);
 
-	add_theme_support( 'editor-color-palette', $colors );
-	add_theme_support( 'editor-font-sizes', $font_sizes );
+//	add_theme_support( 'editor-color-palette', $colors );
+//	add_theme_support( 'editor-font-sizes', $font_sizes );
 }
 
 add_action( 'after_setup_theme', 'tailpress_setup' );
