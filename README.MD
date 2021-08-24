@@ -48,7 +48,7 @@ Before you use your theme in production, make sure you run `npx mix --production
 ## Block editor support
 TailPress comes with basic support for the [block editor](https://wordpress.org/support/article/wordpress-editor/).
 
-A basic setup for `theme.json` is included. This also means that you need to at least use WordPress 5.8. If you wan't to support earlier WordPress versions, you can use an older version of TailPress instead.
+A basic setup for `theme.json` is included. This also means that you need to at least use WordPress 5.8. If you wan't to support earlier WordPress versions, you can use an [older version](https://github.com/jeffreyvr/tailpress/tree/0.1.1) of TailPress instead.
 
 CSS-classes for alignment (full, wide etc.) are generated automatically. You can opt-out on this by removing the plugin from the `tailwind.config.js` file.
 
@@ -66,7 +66,7 @@ By default, PurgeCSS is enabled. You can modify or disable it by changing the se
 ## Theme subfolder
 To better organize the theme and allow for easier purging, a subfolder called `theme` is created. Here you will find the template files like `header.php`, `footer.php`, `single.php`.
 
-To make this work a additional class has been created and placed within the `includes` folder. If you don't like this setup, you can of course still use previous versions of TailPress instead.
+To make this work a additional class has been created and placed within the `includes` folder. If you don't like this setup, you can of course still use [previous versions](https://github.com/jeffreyvr/tailpress/tree/0.1.1) of TailPress instead.
 
 ## Links
 * [TailPress website](https://tailpress.io)
