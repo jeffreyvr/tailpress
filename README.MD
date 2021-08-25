@@ -1,7 +1,11 @@
-<p><img src="http://tailpress.io/images/logo.svg" width="200" alt="TailPress"></p>
+<p><img src="http://tailpress.io/images/logo100.svg" width="260" alt="TailPress"></p>
+
+[![GitHub release](https://img.shields.io/github/release/jeffreyvr/tailpress?include_prereleases=&sort=semver)](https://github.com/jeffreyvr/tailpress/releases/)
+[![License](https://img.shields.io/badge/License-MIT-blue)](#license)
+[![issues - tailpress](https://img.shields.io/github/issues/jeffreyvr/tailpress)](https://github.com/jeffreyvr/tailpress/issues)
 
 # Introduction
-TailPress is a minimal boilerplate theme for WordPress using [TailwindCSS](https://tailwindcss.com/), with [PostCSS](https://postcss.org) and [Laravel Mix](https://laravel-mix.com/).
+TailPress is a minimal boilerplate theme for WordPress using [Tailwind CSS](https://tailwindcss.com/), with [PostCSS](https://postcss.org) and [Laravel Mix](https://laravel-mix.com/).
 
 ## Getting started
 
@@ -23,7 +27,7 @@ composer global require jeffreyvanrossum/tailpress-installer
 tailpress new example-theme
 ```
 
-You can optionally set the theme name. This will also replace all occurences of the word TailPress:
+You can optionally set the theme name.
 
 ```bash
 tailpress new example-theme --name="Example Theme"
@@ -46,7 +50,7 @@ You will find the editable CSS and Javascript files within the `/resources` fold
 Before you use your theme in production, make sure you run `npx mix --production`.
 
 ## Block editor support
-TailPress comes with basic support for the [block editor](https://wordpress.org/support/article/wordpress-editor/).
+TailPress comes with support for the [block editor](https://wordpress.org/support/article/wordpress-editor/).
 
 A basic setup for `theme.json` is included. This also means that you need to at least use WordPress 5.8. If you wan't to support earlier WordPress versions, you can use an [older version](https://github.com/jeffreyvr/tailpress/tree/0.1.1) of TailPress instead.
 
@@ -57,16 +61,16 @@ To make the editing experience within the block editor more in line with the fro
 ### Define theme colors and font sizes
 Several colors and font sizes are defined from the beginning. You can modify the colors in `theme.json`.
 
+## Theme subfolder
+To better organize the theme and allow for easier purging, a subfolder called `theme` is created. Here you will find the template files like `header.php`, `footer.php`, `single.php`.
+
+To make this work a additional class has been created and placed within the `includes` folder. If you don't like this setup, you can of course still use [previous versions](https://github.com/jeffreyvr/tailpress/tree/0.1.1) of TailPress instead.
+
 ## JIT
 [Tailwind CSS JIT](https://tailwindcss.com/docs/just-in-time-mode#enabling-jit-mode) is used to allow for fast compiling.
 
 ## PurgeCSS
 By default, PurgeCSS is enabled. You can modify or disable it by changing the settings in the `tailwind.config.js` file. There are several [PurgeCSS options](https://tailwindcss.com/docs/optimizing-for-production#purge-css-options).
-
-## Theme subfolder
-To better organize the theme and allow for easier purging, a subfolder called `theme` is created. Here you will find the template files like `header.php`, `footer.php`, `single.php`.
-
-To make this work a additional class has been created and placed within the `includes` folder. If you don't like this setup, you can of course still use [previous versions](https://github.com/jeffreyvr/tailpress/tree/0.1.1) of TailPress instead.
 
 ## Links
 * [TailPress website](https://tailpress.io)
