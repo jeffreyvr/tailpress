@@ -2,7 +2,11 @@
 
 All notable changes to TailPress will be documented in this file.
 
-## UNRELEASED
+## Unreleased changes
+
+-
+
+## 1.0.0 - 2021-08-25
 
 - Replace `tailpress.json` with `theme.json` as used by WordPress core.
 - Move template files into `theme` subdirectory.
