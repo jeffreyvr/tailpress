@@ -12,21 +12,10 @@ function tailpress() {
 }
 
 /**
- * Enqueue scripts.
- */
-function tailpress_enqueue_scripts() {
-	$theme = wp_get_theme();
-
-	wp_enqueue_style( 'tailpress', tailpress()->mix( 'css/app.css' ), array(), $theme->get( 'Version' ) );
-	wp_enqueue_script( 'tailpress', tailpress()->mix( 'js/app.js' ), array(), $theme->get( 'Version' ) );
-}
-
-add_action( 'wp_enqueue_scripts', 'tailpress_enqueue_scripts' );
-
-/**
  * Theme setup.
  */
 function tailpress_setup() {
+	// Init TailPress.
 	tailpress();
 
 	// Let WordPress manage the document title.
@@ -39,8 +28,8 @@ function tailpress_setup() {
 		)
 	);
 
-	// Switch default core markup for search form, comment form, and comments
-	// to output valid HTML5.
+	// Switch the default core markup for the search form,
+	// comment form and comments to output valid HTML5.
 	add_theme_support(
 		'html5',
 		array(
@@ -57,14 +46,26 @@ function tailpress_setup() {
 
 	// Block editor.
 	add_theme_support( 'align-wide' );
-
 	add_theme_support( 'wp-block-styles' );
 
+	// Editor style.
 	add_theme_support( 'editor-styles' );
 	add_editor_style();
 }
 
 add_action( 'after_setup_theme', 'tailpress_setup' );
+
+/**
+ * Enqueue theme assets.
+ */
+function tailpress_enqueue_scripts() {
+	$theme = wp_get_theme();
+
+	wp_enqueue_style( 'tailpress', tailpress()->mix( 'css/app.css' ), array(), $theme->get( 'Version' ) );
+	wp_enqueue_script( 'tailpress', tailpress()->mix( 'js/app.js' ), array(), $theme->get( 'Version' ) );
+}
+
+add_action( 'wp_enqueue_scripts', 'tailpress_enqueue_scripts' );
 
 /**
  * Adds option 'li_class' to 'wp_nav_menu'.

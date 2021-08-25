@@ -9,7 +9,7 @@ class TailPress {
 	/**
 	 * Instance of the class.
 	 *
-	 * @return TailPress|null
+	 * @return TailPress
 	 */
 	public static function instance() {
 		if ( ! isset( self::$instance ) && ! ( self::$instance instanceof TailPress ) ) {
@@ -114,6 +114,7 @@ class TailPress {
 	 * Template types.
 	 *
 	 * @see https://developer.wordpress.org/reference/hooks/type_template_hierarchy/
+	 *
 	 * @return string[]
 	 */
 	public function get_template_types() {
