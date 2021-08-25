@@ -4,7 +4,7 @@ All notable changes to TailPress will be documented in this file.
 
 ## Unreleased changes
 
--
+- Update screenshot.png.
 
 ## 1.0.0 - 2021-08-25
 
