@@ -62,11 +62,6 @@ To make the editing experience within the block editor more in line with the fro
 ### Define theme colors and font sizes
 Several colors and font sizes are defined from the beginning. You can modify the colors in `theme.json`.
 
-## Theme subfolder
-To better organize the theme and allow for easier purging, a subfolder called `theme` is created. Here you will find the template files like `header.php`, `footer.php`, `single.php`.
-
-To make this work a additional class has been created and placed within the `includes` folder. If you don't like this setup, you can of course still use [previous versions](https://github.com/jeffreyvr/tailpress/tree/0.1.1) of TailPress instead.
-
 ## JIT
 [Tailwind CSS JIT](https://tailwindcss.com/docs/just-in-time-mode#enabling-jit-mode) is used to allow for fast compiling.
 
