@@ -1,22 +1,9 @@
 <?php
 
-require get_stylesheet_directory() . '/includes/class-tailpress.php';
-
-/**
- * The instance of TailPress.
- *
- * @return TailPress
- */
-function tailpress() {
-	return TailPress::instance();
-}
-
 /**
  * Theme setup.
  */
 function tailpress_setup() {
-	tailpress();
-
 	add_theme_support( 'title-tag' );
 
 	register_nav_menus(
@@ -43,7 +30,7 @@ function tailpress_setup() {
 	add_theme_support( 'wp-block-styles' );
 
 	add_theme_support( 'editor-styles' );
-	add_editor_style();
+	add_editor_style( 'css/editor-style.css' );
 }
 
 add_action( 'after_setup_theme', 'tailpress_setup' );
@@ -54,11 +41,26 @@ add_action( 'after_setup_theme', 'tailpress_setup' );
 function tailpress_enqueue_scripts() {
 	$theme = wp_get_theme();
 
-	wp_enqueue_style( 'tailpress', tailpress()->mix( 'css/app.css' ), array(), $theme->get( 'Version' ) );
-	wp_enqueue_script( 'tailpress', tailpress()->mix( 'js/app.js' ), array(), $theme->get( 'Version' ) );
+	wp_enqueue_style( 'tailpress', tailpress_asset( 'css/app.css' ), array(), $theme->get( 'Version' ) );
+	wp_enqueue_script( 'tailpress', tailpress_asset( 'js/app.js' ), array(), $theme->get( 'Version' ) );
 }
 
 add_action( 'wp_enqueue_scripts', 'tailpress_enqueue_scripts' );
+
+/**
+ * Get asset path.
+ *
+ * @param string  $path Path to asset.
+ *
+ * @return string
+ */
+function tailpress_asset( $path ) {
+	if ( wp_get_environment_type() === 'production' ) {
+		return get_stylesheet_directory_uri() . '/' . $path;
+	}
+
+	return add_query_arg( 'time', time(),  get_stylesheet_directory_uri() . '/' . $path );
+}
 
 /**
  * Adds option 'li_class' to 'wp_nav_menu'.

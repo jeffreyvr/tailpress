@@ -4,6 +4,8 @@ All notable changes to TailPress will be documented in this file.
 
 ## Unreleased changes
 
+- Switching to Tailwind CLI and ESBuild instead of LaraveL Mix.
+- Removing `theme` subdirectory setup.
 - Update screenshot.png.
 
 ## 1.0.0 - 2021-08-25

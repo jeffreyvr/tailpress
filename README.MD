@@ -5,17 +5,9 @@
 [![issues - tailpress](https://img.shields.io/github/issues/jeffreyvr/tailpress)](https://github.com/jeffreyvr/tailpress/issues)
 
 # Introduction
-TailPress is a minimal boilerplate theme for WordPress using [Tailwind CSS](https://tailwindcss.com/), with [PostCSS](https://postcss.org) and [Laravel Mix](https://laravel-mix.com/).
+TailPress is a minimal boilerplate theme for WordPress using [Tailwind CSS](https://tailwindcss.com/).
 
 ## Getting started
-
-### Regular method
-
-* Clone repo `git clone https://github.com/jeffreyvr/tailpress.git && cd tailpress`
-* Run `rm -rf .git` to remove git (or `rmdir .git` for Windows)
-* Run `npm install`
-* Run `npx mix`
-* Run `npx mix watch` to start developing
 
 ### Using the installer
 
@@ -43,11 +35,20 @@ Once your theme is ready, don't forget to cd into the directory.
 
 You will be asked if you would like to have WordPress installed as well. Keep in mind that you still need a local development environment for PHP and MySQL.
 
+### Regular method
+
+* Clone repo `git clone https://github.com/jeffreyvr/tailpress.git && cd tailpress`
+* Run `rm -rf .git` to remove git (or `rmdir .git` for Windows)
+* Run `npm install`
+* Run `npm run watch` to start developing
+
 ### General
+
+TailPress uses the [Tailwind CLI](https://tailwindcss.com/docs/installation#using-tailwind-cli), [PostCSS](https://postcss.org) and [esbuild](https://esbuild.github.io).
 
 You will find the editable CSS and Javascript files within the `/resources` folder.
 
-Before you use your theme in production, make sure you run `npx mix --production`.
+Before you use your theme in production, make sure you run `npm run production`.
 
 ## Block editor support
 TailPress comes with support for the [block editor](https://wordpress.org/support/article/wordpress-editor/).
@@ -76,7 +77,6 @@ By default, PurgeCSS is enabled. You can modify or disable it by changing the se
 * [TailPress website](https://tailpress.io)
 * [Screencasts](https://www.youtube.com/playlist?list=PL6GBdOp044SHIOSCZejodwr1HcYsC43wG)
 * [TailwindCSS Documentation](https://tailwindcss.com/docs)
-* [Laravel Mix Documentation](https://laravel-mix.com/docs)
 
 ## Contributors
 * [Jeffrey van Rossum](https://github.com/jeffreyvr)

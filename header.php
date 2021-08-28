@@ -77,8 +77,7 @@
 			<div class="container mx-auto my-12 border-b pb-12">
 				<h1 class="font-bold text-lg text-secondary uppercase">TailPress</h1>
 				<h2 class="text-3xl lg:text-7xl tracking-tight font-extrabold my-4">Rapidly build your WordPress theme
-					with <a href="https://tailwindcss.com" class="text-primary">TailwindCSS</a> and <a
-							href="https://laravel-mix.com" class="text-primary">Laravel Mix</a>.</h2>
+					with <a href="https://tailwindcss.com" class="text-primary">Tailwind CSS</a>.</h2>
 				<p class="max-w-screen-lg text-gray-700 text-lg font-medium mb-10">TailPress is your go-to starting
 					point for developing WordPress themes with TailwindCSS and comes with basic block-editor support out
 					of the box.</p>

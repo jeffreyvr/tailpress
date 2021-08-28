@@ -1,4 +1,4 @@
-<?php tailpress()->get_header(); ?>
+<?php get_header(); ?>
 
 	<div class="container my-8 mx-auto">
 
@@ -9,12 +9,12 @@
 			the_post();
 			?>
 
-			<?php tailpress()->get_template_part( 'template-parts/content', 'single' ); ?>
+			<?php get_template_part( 'template-parts/content', 'single' ); ?>
 
 			<?php
 			// If comments are open or we have at least one comment, load up the comment template.
 			if ( comments_open() || get_comments_number() ) :
-				tailpress()->comments_template();
+				comments_template();
 			endif;
 			?>
 
@@ -25,4 +25,4 @@
 	</div>
 
 <?php
-tailpress()->get_footer();
+get_footer();

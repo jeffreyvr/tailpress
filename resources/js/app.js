@@ -4,5 +4,6 @@ window.addEventListener('load', function () {
       document.querySelector('#primary-menu-toggle').addEventListener('click', function (e) {
             e.preventDefault();
             main_navigation.classList.toggle('hidden');
-      })
+      });
 });
+console.log('test123');
