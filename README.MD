@@ -71,7 +71,7 @@ By default, PurgeCSS is enabled. You can modify or disable it by changing the se
 ## Links
 * [TailPress website](https://tailpress.io)
 * [Screencasts](https://www.youtube.com/playlist?list=PL6GBdOp044SHIOSCZejodwr1HcYsC43wG)
-* [TailwindCSS Documentation](https://tailwindcss.com/docs)
+* [Tailwind CSS Documentation](https://tailwindcss.com/docs)
 
 ## Contributors
 * [Jeffrey van Rossum](https://github.com/jeffreyvr)
