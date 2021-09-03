@@ -19,6 +19,8 @@ composer global require jeffreyvanrossum/tailpress-installer
 tailpress new example-theme
 ```
 
+If you haven't already, make sure to place the `~/.composer/vendor/bin` directory in your `PATH` so the tailpress executable is found when you run the tailpress command in your terminal.
+
 You can optionally set the theme name.
 
 ```bash
@@ -46,9 +48,24 @@ You will be asked if you would like to have WordPress installed as well. Keep in
 
 TailPress uses the [Tailwind CLI](https://tailwindcss.com/docs/installation#using-tailwind-cli), [PostCSS](https://postcss.org) and [esbuild](https://esbuild.github.io).
 
+[Tailwind CSS JIT](https://tailwindcss.com/docs/just-in-time-mode#enabling-jit-mode) is used to allow for fast compiling.
+
 You will find the editable CSS and Javascript files within the `/resources` folder.
 
 Before you use your theme in production, make sure you run `npm run production`.
+
+## NPM Scripts
+
+There are several NPM scripts available. You'll find the full list in the `package.json` file onder "scripts". A script is executed through the terminal by running `npm run script-name`.
+
+| Script     | Description                                                                    |
+|------------|--------------------------------------------------------------------------------|
+| production | Creates a production (minified) build of app.js, app.css and editor-style.css. |
+| dev        | Creates a development build of app.js, app.css and editor-style.css.           |
+| watch      | Runs several watch scripts concurrently.                                       |
+| watch-sync | Runs several watch scripts concurrently and starts `browser-sync`.             |
+
+You can also run specific scripts if you, for example, only want to build your app.js production version, you can run `npm run production-js` or for.
 
 ## Block editor support
 TailPress comes with support for the [block editor](https://wordpress.org/support/article/wordpress-editor/).
@@ -62,9 +79,6 @@ To make the editing experience within the block editor more in line with the fro
 ### Define theme colors and font sizes
 Several colors and font sizes are defined from the beginning. You can modify the colors in `theme.json`.
 
-## JIT
-[Tailwind CSS JIT](https://tailwindcss.com/docs/just-in-time-mode#enabling-jit-mode) is used to allow for fast compiling.
-
 ## PurgeCSS
 By default, PurgeCSS is enabled. You can modify or disable it by changing the settings in the `tailwind.config.js` file. There are several [PurgeCSS options](https://tailwindcss.com/docs/optimizing-for-production#purge-css-options).
 
@@ -72,6 +86,7 @@ By default, PurgeCSS is enabled. You can modify or disable it by changing the se
 * [TailPress website](https://tailpress.io)
 * [Screencasts](https://www.youtube.com/playlist?list=PL6GBdOp044SHIOSCZejodwr1HcYsC43wG)
 * [Tailwind CSS Documentation](https://tailwindcss.com/docs)
+* [Esbuild Documentation](https://esbuild.github.io)
 
 ## Contributors
 * [Jeffrey van Rossum](https://github.com/jeffreyvr)
