@@ -65,8 +65,6 @@ There are several NPM scripts available. You'll find the full list in the `packa
 | watch      | Runs several watch scripts concurrently.                                       |
 | watch-sync | Runs several watch scripts concurrently and starts `browser-sync`.             |
 
-You can also run specific scripts if you, for example, only want to build your app.js production version, you can run `npm run production-js` or for.
-
 ## Block editor support
 TailPress comes with support for the [block editor](https://wordpress.org/support/article/wordpress-editor/).
 
