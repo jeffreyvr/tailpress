@@ -21,11 +21,11 @@
 		"watch:css-app": "tailwindcss -i ./resources/css/app.css -o ./css/app.css --postcss --watch",
 		"watch:css-editor": "tailwindcss -i ./resources/css/editor-style.css -o ./css/editor-style.css --postcss --watch",
 		"watch:js": "./node_modules/.bin/esbuild ./resources/js/app.js --bundle --outfile=./js/app.js --watch",
-		"production": "cross-env NODE_ENV=production npm-run-all --parallel production:*",
-		"dev": "cross-env NODE_ENV=development npm-run-all --parallel dev:*",
-		"watch": "cross-env NODE_ENV=development npm-run-all --parallel watch:*",
+		"production": "cross-env NODE_ENV=production concurrently \"npm run production:css-app\" \"npm run production:css-editor\" \"npm run production:js\"",
+		"dev": "cross-env NODE_ENV=development concurrently \"npm run dev:css-app\" \"npm run dev:css-editor\" \"npm run dev:js\"",
+		"watch": "cross-env NODE_ENV=development concurrently \"npm run watch:css-app\" \"npm run watch:css-editor\" \"npm run watch:js\"",
 		"browser-sync": "cross-env NODE_ENV=development browser-sync start --proxy \"tailpress.test\" --host=\"tailpress.test\" --no-inject-changes --files=\"./\"",
-		"watch-sync": "cross-env NODE_ENV=development npm-run-all --parallel watch:* browser-sync"
+		"watch-sync": "concurrently \"npm run browser-sync\" \"npm run watch\""
 	},
 	"devDependencies": {
 		"@jeffreyvr/tailwindcss-tailpress": "^0.1.0",
@@ -33,12 +33,12 @@
 		"browser-sync": "^2.26.14",
 		"cross-env": "^6.0.3",
 		"esbuild": "^0.12.24",
-		"npm-run-all": "^4.1.5",
 		"postcss": "^8.2.10",
 		"postcss-import": "^14.0.0",
 		"postcss-nested": "^5.0.3",
 		"postcss-nested-ancestors": "^2.0.0",
 		"resolve-url-loader": "^3.1.2",
-		"tailwindcss": "^2.2.0"
+		"tailwindcss": "^2.2.0",
+		"concurrently": "^6.2.1"
 	}
 }
