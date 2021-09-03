@@ -19,7 +19,7 @@ composer global require jeffreyvanrossum/tailpress-installer
 tailpress new example-theme
 ```
 
-If you haven't already, make sure to place the `~/.composer/vendor/bin` directory in your `PATH` so the tailpress executable is found when you run the tailpress command in your terminal.
+*If you haven't already, make sure to place the `~/.composer/vendor/bin` directory in your `PATH` so the tailpress executable is found when you run the tailpress command in your terminal.*
 
 You can optionally set the theme name.
 
