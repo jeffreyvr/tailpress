@@ -12,7 +12,7 @@ TailPress is a minimal boilerplate theme for WordPress using [Tailwind CSS](http
 
 ### Using the installer
 
-You can also get started using the installer:
+You can get started using the installer (using composer):
 
 ```bash
 composer global require jeffreyvanrossum/tailpress-installer
