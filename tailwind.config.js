@@ -6,7 +6,7 @@ module.exports = {
     mode: 'jit',
     purge: {
         content: [
-            './header.php',
+            './*.php',
             './template-parts/*.php',
             './resources/css/*.css',
             './resources/js/*.js',

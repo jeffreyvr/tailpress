@@ -27,12 +27,8 @@ mix.options({
 //     port: 8000
 // });
 
-mix.webpackConfig({
-    watchOptions: {
-        ignored: ['css/**', 'js/**', 'node_modules/**']
-    }
-});
-
 if (mix.inProduction()) {
     mix.version();
+} else {
+    Mix.manifest.refresh = _ => void 0
 }
