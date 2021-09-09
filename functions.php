@@ -41,8 +41,8 @@ add_action( 'after_setup_theme', 'tailpress_setup' );
 function tailpress_enqueue_scripts() {
 	$theme = wp_get_theme();
 
-	wp_enqueue_style( 'tailpress', tailpress_asset( 'css/app.css' ), array(), $theme->get( 'Version' ) );
-	wp_enqueue_script( 'tailpress', tailpress_asset( 'js/app.js' ), array(), $theme->get( 'Version' ) );
+	wp_enqueue_style( 'tailpress', tailpress_mix( 'css/app.css' ), array(), $theme->get( 'Version' ) );
+	wp_enqueue_script( 'tailpress', tailpress_mix( 'js/app.js' ), array(), $theme->get( 'Version' ) );
 }
 
 add_action( 'wp_enqueue_scripts', 'tailpress_enqueue_scripts' );
@@ -60,6 +60,32 @@ function tailpress_asset( $path ) {
 	}
 
 	return add_query_arg( 'time', time(),  get_stylesheet_directory_uri() . '/' . $path );
+}
+
+/**
+ * Get mix path.
+ *
+ * @param string $path Path to file.
+ * @return string
+ */
+function tailpress_mix( $path ) {
+	if ( wp_get_environment_type() != 'production' ) {
+		return tailpress_asset( $path );
+	}
+
+	$path                = '/' . $path;
+	$stylesheet_dir_uri  = get_stylesheet_directory_uri();
+	$stylesheet_dir_path = get_stylesheet_directory();
+
+	if ( ! file_exists( $stylesheet_dir_path . '/mix-manifest.json' ) ) {
+		return $stylesheet_dir_uri . $path;
+	}
+
+	$mix_file_path = file_get_contents( $stylesheet_dir_path . '/mix-manifest.json' );
+	$manifest      = json_decode( $mix_file_path, true );
+	$asset_path    = ! empty( $manifest[ $path ] ) ? $manifest[ $path ] : $path;
+
+	return $stylesheet_dir_uri . $asset_path;
 }
 
 /**
