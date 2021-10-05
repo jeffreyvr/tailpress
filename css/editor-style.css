@@ -142,42 +142,38 @@
 }
 .border-primary {
     --tw-border-opacity: 1;
-    border-color: rgba(14, 165, 233, var(--tw-border-opacity))
+    border-color: rgb(14 165 233 / var(--tw-border-opacity))
 }
 .border-transparent {
     border-color: transparent
 }
 .bg-primary {
     --tw-bg-opacity: 1;
-    background-color: rgba(14, 165, 233, var(--tw-bg-opacity))
+    background-color: rgb(14 165 233 / var(--tw-bg-opacity))
 }
 .bg-indigo-50 {
     --tw-bg-opacity: 1;
-    background-color: rgba(238, 242, 255, var(--tw-bg-opacity))
+    background-color: rgb(238 242 255 / var(--tw-bg-opacity))
 }
 .bg-gray-200 {
     --tw-bg-opacity: 1;
-    background-color: rgba(229, 231, 235, var(--tw-bg-opacity))
+    background-color: rgb(229 231 235 / var(--tw-bg-opacity))
 }
 .bg-gray-50 {
     --tw-bg-opacity: 1;
-    background-color: rgba(249, 250, 251, var(--tw-bg-opacity))
-}
-.bg-gray-100 {
-    --tw-bg-opacity: 1;
-    background-color: rgba(243, 244, 246, var(--tw-bg-opacity))
-}
-.bg-gray-900 {
-    --tw-bg-opacity: 1;
-    background-color: rgba(17, 24, 39, var(--tw-bg-opacity))
-}
-.bg-red-900 {
-    --tw-bg-opacity: 1;
-    background-color: rgba(127, 29, 29, var(--tw-bg-opacity))
+    background-color: rgb(249 250 251 / var(--tw-bg-opacity))
 }
 .bg-white {
     --tw-bg-opacity: 1;
-    background-color: rgba(255, 255, 255, var(--tw-bg-opacity))
+    background-color: rgb(255 255 255 / var(--tw-bg-opacity))
+}
+.bg-gray-100 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(243 244 246 / var(--tw-bg-opacity))
+}
+.bg-gray-900 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(17 24 39 / var(--tw-bg-opacity))
 }
 .p-4 {
     padding: 1rem
@@ -265,39 +261,39 @@
 }
 .text-gray-800 {
     --tw-text-opacity: 1;
-    color: rgba(31, 41, 55, var(--tw-text-opacity))
+    color: rgb(31 41 55 / var(--tw-text-opacity))
 }
 .text-white {
     --tw-text-opacity: 1;
-    color: rgba(255, 255, 255, var(--tw-text-opacity))
+    color: rgb(255 255 255 / var(--tw-text-opacity))
 }
 .text-gray-500 {
     --tw-text-opacity: 1;
-    color: rgba(107, 114, 128, var(--tw-text-opacity))
+    color: rgb(107 114 128 / var(--tw-text-opacity))
 }
 .text-gray-900 {
     --tw-text-opacity: 1;
-    color: rgba(17, 24, 39, var(--tw-text-opacity))
+    color: rgb(17 24 39 / var(--tw-text-opacity))
 }
 .text-gray-600 {
     --tw-text-opacity: 1;
-    color: rgba(75, 85, 99, var(--tw-text-opacity))
+    color: rgb(75 85 99 / var(--tw-text-opacity))
 }
 .text-secondary {
     --tw-text-opacity: 1;
-    color: rgba(20, 184, 166, var(--tw-text-opacity))
+    color: rgb(20 184 166 / var(--tw-text-opacity))
 }
 .text-primary {
     --tw-text-opacity: 1;
-    color: rgba(14, 165, 233, var(--tw-text-opacity))
+    color: rgb(14 165 233 / var(--tw-text-opacity))
 }
 .text-gray-700 {
     --tw-text-opacity: 1;
-    color: rgba(55, 65, 81, var(--tw-text-opacity))
+    color: rgb(55 65 81 / var(--tw-text-opacity))
 }
 .text-blue-500 {
     --tw-text-opacity: 1;
-    color: rgba(59, 130, 246, var(--tw-text-opacity))
+    color: rgb(59 130 246 / var(--tw-text-opacity))
 }
 .antialiased {
     -webkit-font-smoothing: antialiased;
@@ -393,7 +389,7 @@ body {
 }
 .focus\:ring-gray-900:focus {
     --tw-ring-opacity: 1;
-    --tw-ring-color: rgba(17, 24, 39, var(--tw-ring-opacity))
+    --tw-ring-color: rgb(17 24 39 / var(--tw-ring-opacity))
 }
 .focus\:ring-offset-2:focus {
     --tw-ring-offset-width: 2px

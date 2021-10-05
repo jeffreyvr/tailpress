@@ -3,9 +3,8 @@ const theme = require('./theme.json');
 const tailpress = require("@jeffreyvr/tailwindcss-tailpress");
 
 module.exports = {
-    mode: 'jit',
-    purge: {
-        content: [
+    content: {
+        files: [
             './*.php',
             './template-parts/*.php',
             './resources/css/*.css',
