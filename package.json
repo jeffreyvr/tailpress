@@ -29,16 +29,16 @@
 	},
 	"devDependencies": {
 		"@jeffreyvr/tailwindcss-tailpress": "^0.1.0",
-		"autoprefixer": "^10.2.4",
+		"autoprefixer": "^10.4.0",
 		"browser-sync": "^2.26.14",
+		"concurrently": "^6.2.1",
 		"cross-env": "^6.0.3",
 		"esbuild": "^0.12.24",
-		"postcss": "^8.2.10",
+		"postcss": "^8.4.4",
 		"postcss-import": "^14.0.0",
 		"postcss-nested": "^5.0.3",
 		"postcss-nested-ancestors": "^2.0.0",
 		"resolve-url-loader": "^3.1.2",
-		"tailwindcss": "^2.2.0",
-		"concurrently": "^6.2.1"
+		"tailwindcss": "^3.0.0"
 	}
 }

@@ -49,8 +49,6 @@ You will be asked if you would like to have WordPress installed as well. Keep in
 
 TailPress uses the [Tailwind CLI](https://tailwindcss.com/docs/installation#using-tailwind-cli), [PostCSS](https://postcss.org) and [esbuild](https://esbuild.github.io).
 
-[Tailwind CSS JIT](https://tailwindcss.com/docs/just-in-time-mode#enabling-jit-mode) is used to allow for fast compiling.
-
 You will find the editable CSS and Javascript files within the `/resources` folder.
 
 Before you use your theme in production, make sure you run `npm run production`.
@@ -78,11 +76,7 @@ To make the editing experience within the block editor more in line with the fro
 
 ### Define theme colors and font sizes
 
-Several colors and font sizes are defined from the beginning. You can modify the colors in `theme.json`.
-
-## PurgeCSS
-
-By default, PurgeCSS is enabled. You can modify or disable it by changing the settings in the `tailwind.config.js` file. There are several [PurgeCSS options](https://tailwindcss.com/docs/optimizing-for-production#purge-css-options).
+Several colors and font sizes are defined from the beginning. You can modify them in `theme.json`.
 
 ## Links
 
