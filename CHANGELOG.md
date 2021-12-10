@@ -2,6 +2,10 @@
 
 All notable changes to TailPress will be documented in this file.
 
+## Unreleased
+
+- Updating Tailwind to 3.0.0.
+
 ## 2.0.0 - 2021-09-03
 
 - Switching to Tailwind CLI and esbuild instead of LaraveL Mix.
