@@ -4,7 +4,14 @@ All notable changes to TailPress will be documented in this file.
 
 ## Unreleased
 
+## 3.0.0 - 2021-12-14
+
 - Updating Tailwind to 3.0.0.
+
+### TailPress installer
+
+- The TailPress installer (^0.2.0) now allows you to use Laravel Mix instead of esbuild by setting --compiler=mix.
+- You may now also set dbname, dbuser, dbpass and dbhost.
 
 ## 2.0.0 - 2021-09-03
 
