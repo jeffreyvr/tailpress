@@ -28,6 +28,12 @@ You can optionally set the theme name.
 tailpress new example-theme --name="Example Theme"
 ```
 
+By default, TailPress uses esbuild and Tailwind's CLI for compiling. Rather use Laravel Mix?
+
+```bash
+tailpress new example-theme --compiler="mix"
+```
+
 You can also initialize a new Git repository (branch defaults to `main`):
 
 ```bash
