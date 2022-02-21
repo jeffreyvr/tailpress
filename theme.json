@@ -2,6 +2,7 @@
   "version": 1,
   "settings": {
     "layout": {
+      "contentSize": "1024px",
       "wideSize": "1280px"
     },
     "color": {
