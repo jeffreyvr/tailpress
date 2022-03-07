@@ -4,6 +4,12 @@ All notable changes to TailPress will be documented in this file.
 
 ## Unreleased
 
+- Tailwind font sizes are now set as defined in `theme.json`.
+- Breakpoints now based on WordPress defaults (https://developer.wordpress.org/block-editor/reference-guides/packages/packages-viewport/#usage).
+- Providing `w-content`, `max-w-content`, `w-wide` and `max-w-wide` utility classes.
+- Content width is now actually the width as defined in `theme.json`.
+- Fixing align wide, width as defined in `theme.json`.
+
 ## 3.0.0 - 2021-12-14
 
 - Updating Tailwind to 3.0.0.
