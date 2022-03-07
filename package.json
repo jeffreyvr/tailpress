@@ -28,7 +28,7 @@
 		"watch-sync": "concurrently \"npm run browser-sync\" \"npm run watch\""
 	},
 	"devDependencies": {
-		"@jeffreyvr/tailwindcss-tailpress": "^0.1.0",
+		"@jeffreyvr/tailwindcss-tailpress": "^2.0.0",
 		"autoprefixer": "^10.4.0",
 		"browser-sync": "^2.26.14",
 		"concurrently": "^6.2.1",
