@@ -4,7 +4,7 @@ const tailpress = require("@jeffreyvr/tailwindcss-tailpress");
 
 module.exports = {
     content: [
-        './*/*.php',
+        './*.php',
         './**/*.php',
         './resources/css/*.css',
         './resources/js/*.js',
