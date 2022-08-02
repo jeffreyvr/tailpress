@@ -61,7 +61,7 @@ Before you use your theme in production, make sure you run `npm run production`.
 
 ## NPM Scripts
 
-There are several NPM scripts available. You'll find the full list in the `package.json` file onder "scripts". A script is executed through the terminal by running `npm run script-name`.
+There are several NPM scripts available. You'll find the full list in the `package.json` file under "scripts". A script is executed through the terminal by running `npm run script-name`.
 
 | Script     | Description                                                                    |
 |------------|--------------------------------------------------------------------------------|
