@@ -29,15 +29,15 @@
 	},
 	"devDependencies": {
 		"@jeffreyvr/tailwindcss-tailpress": "^2.0.0",
-		"autoprefixer": "^10.4.0",
+		"autoprefixer": "^10.4.13",
 		"browser-sync": "^2.26.14",
 		"concurrently": "^6.2.1",
 		"cross-env": "^6.0.3",
 		"esbuild": "^0.12.24",
-		"postcss": "^8.4.4",
+		"postcss": "^8.4.18",
 		"postcss-import": "^14.0.0",
 		"postcss-nested-ancestors": "^2.0.0",
 		"resolve-url-loader": "^3.1.2",
-		"tailwindcss": "^3.1.0"
+		"tailwindcss": "^3.2.0"
 	}
 }
