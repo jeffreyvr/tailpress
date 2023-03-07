@@ -63,7 +63,7 @@ function tailpress_asset( $path ) {
 }
 
 /**
- * Adds option 'li_class' to 'wp_nav_menu'.
+ * Adds option 'li_class' and 'current_class' to 'wp_nav_menu'.
  *
  * @param string  $classes String of classes.
  * @param mixed   $item The curren item.
@@ -71,7 +71,10 @@ function tailpress_asset( $path ) {
  *
  * @return array
  */
-function tailpress_nav_menu_add_li_class( $classes, $item, $args, $depth ) {
+function theme_nav_menu_add_supporting_class( $classes, $item, $args, $depth ) {
+	global $wp;
+	$current_page_url = home_url( add_query_arg( array(), $wp->request ) )  . "/";
+
 	if ( isset( $args->li_class ) ) {
 		$classes[] = $args->li_class;
 	}
@@ -80,10 +83,20 @@ function tailpress_nav_menu_add_li_class( $classes, $item, $args, $depth ) {
 		$classes[] = $args->{"li_class_$depth"};
 	}
 
+	if ( $item->url == $current_page_url ) {
+		if ( isset( $args->current_class ) ) {
+			$classes[] = $args->current_class;
+		}
+
+		if ( isset( $args->{"current_class_$depth"} ) ) {
+			$classes[] = $args->{"current_class_$depth"};
+		}
+	}
+
 	return $classes;
 }
 
-add_filter( 'nav_menu_css_class', 'tailpress_nav_menu_add_li_class', 10, 4 );
+add_filter( 'nav_menu_css_class', 'theme_nav_menu_add_supporting_class', 10, 4 );
 
 /**
  * Adds option 'submenu_class' to 'wp_nav_menu'.
