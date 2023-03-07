@@ -60,6 +60,7 @@
 						'menu_class'      => 'lg:flex lg:-mx-4',
 						'theme_location'  => 'primary',
 						'li_class'        => 'lg:mx-4',
+						'current_class'   => 'bold',
 						'fallback_cb'     => false,
 					)
 				);
