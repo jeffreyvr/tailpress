@@ -66,7 +66,7 @@ function tailpress_asset( $path ) {
  * Adds option 'li_class' to 'wp_nav_menu'.
  *
  * @param string  $classes String of classes.
- * @param mixed   $item The curren item.
+ * @param mixed   $item The current item.
  * @param WP_Term $args Holds the nav menu arguments.
  *
  * @return array
@@ -89,7 +89,7 @@ add_filter( 'nav_menu_css_class', 'tailpress_nav_menu_add_li_class', 10, 4 );
  * Adds option 'submenu_class' to 'wp_nav_menu'.
  *
  * @param string  $classes String of classes.
- * @param mixed   $item The curren item.
+ * @param mixed   $item The current item.
  * @param WP_Term $args Holds the nav menu arguments.
  *
  * @return array
