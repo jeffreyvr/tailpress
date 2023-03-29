@@ -21,7 +21,7 @@
 	"devDependencies": {
 		"@jeffreyvr/tailwindcss-tailpress": "^2.0.0",
 		"autoprefixer": "^10.4.0",
-		"browser-sync": "^2.26.14",
+		"browser-sync": "^2.29.1",
 		"cross-env": "^6.0.3",
 		"laravel-mix": "^6.0.29",
 		"postcss": "^8.2.10",
