@@ -28,10 +28,10 @@ You can optionally set the theme name.
 tailpress new example-theme --name="Example Theme"
 ```
 
-By default, TailPress uses esbuild and Tailwind's CLI for compiling. Rather use Laravel Mix?
+By default, TailPress uses Laravel Mix for compiling. Rather use Esbuild?
 
 ```bash
-tailpress new example-theme --compiler="mix"
+tailpress new example-theme --compiler="esbuild"
 ```
 
 You can also initialize a new Git repository (branch defaults to `main`):
@@ -53,8 +53,6 @@ You will be asked if you would like to have WordPress installed as well. Keep in
 
 ### General
 
-TailPress uses the [Tailwind CLI](https://tailwindcss.com/docs/installation#using-tailwind-cli), [PostCSS](https://postcss.org) and [esbuild](https://esbuild.github.io).
-
 You will find the editable CSS and Javascript files within the `/resources` folder.
 
 Before you use your theme in production, make sure you run `npm run production`.
@@ -68,7 +66,6 @@ There are several NPM scripts available. You'll find the full list in the `packa
 | production | Creates a production (minified) build of app.js, app.css and editor-style.css. |
 | dev        | Creates a development build of app.js, app.css and editor-style.css.           |
 | watch      | Runs several watch scripts concurrently.                                       |
-| watch-sync | Runs several watch scripts concurrently and starts `browser-sync`.             |
 
 ## Block editor support
 
@@ -89,6 +86,7 @@ Several colors and font sizes are defined from the beginning. You can modify the
 * [TailPress website](https://tailpress.io)
 * [Screencasts](https://www.youtube.com/playlist?list=PL6GBdOp044SHIOSCZejodwr1HcYsC43wG)
 * [Tailwind CSS Documentation](https://tailwindcss.com/docs)
+* [Laravel Mix Documentation](https://laravel-mix.com)
 * [Esbuild Documentation](https://esbuild.github.io)
 
 ## Contributors
