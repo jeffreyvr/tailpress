@@ -4,6 +4,15 @@ All notable changes to TailPress will be documented in this file.
 
 ## Unreleased
 
+## 3.3.0
+
+- Update to Tailwind 3.3.0
+- Laravel Mix is now the default compiler (with the TailPress installer (^v2.0.0), use `compiler="esbuild"` if you want to keep using esbuild)
+
+## 3.2.0
+
+- Update to Tailwind 3.2.0
+
 ## 3.1.0
 - Tailwind font sizes are now set as defined in `theme.json`.
 - Breakpoints now based on WordPress defaults (https://developer.wordpress.org/block-editor/reference-guides/packages/packages-viewport/#usage).
