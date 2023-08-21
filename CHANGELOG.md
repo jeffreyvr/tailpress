@@ -4,6 +4,8 @@ All notable changes to TailPress will be documented in this file.
 
 ## Unreleased
 
+- Use `mix.options({ manifest: false })` instead of deprecated `Mix.manifest.refresh = _ => void 0`
+
 ## 3.3.0
 
 - Update to Tailwind 3.3.0

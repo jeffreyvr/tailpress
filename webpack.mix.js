@@ -28,5 +28,5 @@ mix.postCss("resources/css/editor-style.css", "css");
 if (mix.inProduction()) {
     mix.version();
 } else {
-    Mix.manifest.refresh = _ => void 0
+    mix.options({ manifest: false });
 }
