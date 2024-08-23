@@ -23,6 +23,7 @@ mix.postCss("resources/css/editor-style.css", "css");
 //     host: 'tailpress.test',
 //     open: 'external',
 //     port: 8000
+//     injectChanges: true
 // });
 
 if (mix.inProduction()) {
