@@ -1,3 +1,13 @@
 /node_modules
-/.idea
 /.vscode
+
+# IDEs
+.idea
+
+# WordPress
+wp-config.php
+.DS_Store
+*.old
+*.new
+
+vendor/
