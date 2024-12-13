@@ -20,7 +20,10 @@ module.exports = {
         },
         extend: {
             colors: tailpress.colorMapper(tailpress.theme('settings.color.palette', theme)),
-            fontSize: tailpress.fontSizeMapper(tailpress.theme('settings.typography.fontSizes', theme))
+            fontSize: tailpress.fontSizeMapper(tailpress.theme('settings.typography.fontSizes', theme)),
+            fontFamily: {
+                sans: ['Open Sans Condensed', 'sans-serif'], // Set Open Sans Condensed as the base sans-serif font
+            }
         },
         screens: {
             'xs': '480px',

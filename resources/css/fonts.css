@@ -1,0 +1,19 @@
+/* opensans-condensed-regular - latin */
+@font-face {
+    font-display: swap;
+    font-family: 'Open Sans Condensed';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/OpenSans-CondLight.woff2') format('woff2');
+}
+
+/* opensans-condensed-bold - latin */
+@font-face {
+    font-display: swap;
+    font-family: 'Open Sans Condensed';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/OpenSans-CondLight.woff2') format('woff2');
+}
+
+

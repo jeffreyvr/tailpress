@@ -1,0 +1,4 @@
+/* Base typography styles */
+html {
+    @apply font-sans;
+}
