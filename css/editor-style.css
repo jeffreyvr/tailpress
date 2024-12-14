@@ -287,6 +287,9 @@
 .uppercase {
     text-transform: uppercase
 }
+.italic {
+    font-style: italic
+}
 .leading-6 {
     line-height: 1.5rem
 }
@@ -396,7 +399,7 @@
     color: #4b5563
 }
 body {
-    font-family: Open Sans Condensed, sans-serif
+    font-family: IBM Plex Sans, sans-serif
 }
 .wp-block {
     max-width: 1024px
