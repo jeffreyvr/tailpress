@@ -30,5 +30,8 @@
 		"postcss-nested-ancestors": "^2.0.0",
 		"resolve-url-loader": "^3.1.2",
 		"tailwindcss": "^3.4.0"
+	},
+	"dependencies": {
+		"@tailwindcss/typography": "^0.5.15"
 	}
 }
