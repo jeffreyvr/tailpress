@@ -11,7 +11,7 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-	<header class="entry-header mb-4">
+	<header class="entry-header mb-4 text-center">
 		<?php the_title( '<h1 class="entry-title text-2xl lg:text-5xl leading-tight mb-1">', '</h1>' ); ?>
 		<?php if ( 'post' === get_post_type() ) : ?>
 		<time datetime="<?php echo get_the_date( 'c' ); ?>" itemprop="datePublished" class="text-sm text-gray-700"><?php echo get_the_date(); ?></time>
