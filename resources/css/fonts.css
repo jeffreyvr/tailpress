@@ -1,29 +1,3 @@
-/* opensans-condensed-regular - latin */
-@font-face {
-    font-display: swap;
-    font-family: 'Open Sans Condensed';
-    font-style: normal;
-    /* font-weight: 400; */
-    src: url('../fonts/OpenSans-CondLight.woff2') format('woff2');
-}
-
-/* opensans-condensed-bold - latin */
-@font-face {
-    font-display: swap;
-    font-family: 'Open Sans Condensed V2';
-    font-style: normal;
-    font-weight: 800;
-    src: url('../fonts/OpenSans-CondBold.ttf') format('truetype');
-}
-
-@font-face {
-  font-family: 'Open Sans Condensed V3';
-  font-style: normal;
-  font-display: swap;
-  font-weight: 700;
-  src: url('../fonts/OpenSans_Condensed-SemiBold.ttf') format('truetype');
-}
-
 /* sofia-sans-extra-condensed-regular - latin */
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
