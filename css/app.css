@@ -601,6 +601,9 @@ video {
 .w-6{
   width: 1.5rem;
 }
+.w-\[100px\]{
+  width: 100px;
+}
 .w-full{
   width: 100%;
 }
@@ -1114,6 +1117,10 @@ article > *:not(.entry-content),
 
   .md\:w-1\/2{
     width: 50%;
+  }
+
+  .md\:w-\[125px\]{
+    width: 125px;
   }
 
   .md\:text-3xl{

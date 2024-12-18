@@ -1,3 +1,16 @@
+<?php
+/**
+ * The header for our theme
+ *
+ * This is the template that displays all of the <head> section and everything up until <div id="content">
+ *
+ * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
+ *
+ * @package Tailpress
+ */
+
+?>
+
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
@@ -22,16 +35,16 @@
 		<div class="mx-auto container">
 			<div class="lg:flex lg:justify-between lg:items-center border-b py-6">
 				<div class="flex justify-between items-center">
-					<div>
+				<div class="w-[100px] md:w-[125px]">
 						<?php if ( has_custom_logo() ) { ?>
-                            <?php the_custom_logo(); ?>
+							<?php the_custom_logo(); ?>
 						<?php } else { ?>
-							<a href="<?php echo get_bloginfo( 'url' ); ?>" class="font-extrabold text-lg uppercase">
-								<?php echo get_bloginfo( 'name' ); ?>
+							<a href="<?php echo esc_url( get_bloginfo( 'url' ) ); ?>" class="font-extrabold text-lg uppercase">
+								<?php echo esc_html( get_bloginfo( 'name' ) ); ?>
 							</a>
 
 							<p class="text-sm font-light text-gray-600">
-								<?php echo get_bloginfo( 'description' ); ?>
+								<?php echo wp_kses_post( get_bloginfo( 'description' ) ); ?>
 							</p>
 
 						<?php } ?>
@@ -74,17 +87,17 @@
 			<!-- Start introduction -->
 			<div class="container mx-auto">
 				<div class="px-12 py-16 my-12 rounded-xl bg-gradient-to-r from-blue-50 from-10% via-sky-100 via-30% to-blue-200 to-90%">
-                    <div class="mx-auto max-w-screen-md">
-                        <h1 class="text-3xl lg:text-6xl tracking-tight font-extrabold text-gray-800 mb-6">Start building your next <a href="https://tailwindcss.com" class="text-secondary">Tailwind CSS</a> flavoured WordPress theme
-                            with <a href="https://tailpress.io" class="text-primary">TailPress</a>.</h1>
-                        <p class="text-gray-600 text-xl font-medium mb-10">TailPress is your go-to starting
-                            point for developing WordPress themes with Tailwind CSS and comes with basic block-editor support out
-                            of the box.</p>
-                        <a href="https://github.com/jeffreyvr/tailpress"
-                            class="w-full sm:w-auto flex-none bg-gray-900 text-white text-lg leading-6 font-semibold py-3 px-6 border border-transparent rounded-xl focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-gray-900 focus:outline-none transition-colors duration-200">View
-                            on GitHub</a>
-                    </div>
-                </div>
+					<div class="mx-auto max-w-screen-md">
+						<h1 class="text-3xl lg:text-6xl tracking-tight font-extrabold text-gray-800 mb-6">Start building your next <a href="https://tailwindcss.com" class="text-secondary">Tailwind CSS</a> flavoured WordPress theme
+							with <a href="https://tailpress.io" class="text-primary">TailPress</a>.</h1>
+						<p class="text-gray-600 text-xl font-medium mb-10">TailPress is your go-to starting
+							point for developing WordPress themes with Tailwind CSS and comes with basic block-editor support out
+							of the box.</p>
+						<a href="https://github.com/jeffreyvr/tailpress"
+							class="w-full sm:w-auto flex-none bg-gray-900 text-white text-lg leading-6 font-semibold py-3 px-6 border border-transparent rounded-xl focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-gray-900 focus:outline-none transition-colors duration-200">View
+							on GitHub</a>
+					</div>
+				</div>
 			</div>
 			<!-- End introduction -->
 		<?php } ?>
