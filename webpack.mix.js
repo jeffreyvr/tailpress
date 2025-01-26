@@ -14,9 +14,9 @@ mix.webpackConfig({
 
 mix.js('resources/js/app.js', 'js');
 
-mix.postCss("resources/css/app.css", "css");
+mix.postCss("resources/css/app.css", "css", require('@tailwindcss/postcss'));
 
-mix.postCss("resources/css/editor-style.css", "css");
+mix.postCss("resources/css/editor-style.css", "css", require('@tailwindcss/postcss'));
 
 // mix.browserSync({
 //     proxy: 'http://tailpress.test',
