@@ -1,6 +1,6 @@
 {
 	"name": "tailpress",
-	"version": "3.4.0",
+	"version": "4.0.0",
 	"description": "Boilerplate WordPress theme with Tailwind CSS.",
 	"author": "Jeffrey van Rossum",
 	"repository": {
@@ -22,6 +22,7 @@
 		"@jeffreyvr/tailwindcss-tailpress": "^2.0.0",
 		"autoprefixer": "^10.4.0",
 		"browser-sync": "^2.26.14",
+		"browser-sync-webpack-plugin": "^2.3.0",
 		"cross-env": "^6.0.3",
 		"laravel-mix": "^6.0.29",
 		"postcss": "^8.5.1",
@@ -29,9 +30,7 @@
 		"postcss-nested": "^5.0.3",
 		"postcss-nested-ancestors": "^2.0.0",
 		"resolve-url-loader": "^3.1.2",
-		"tailwindcss": "^4.0.0"
-	},
-	"dependencies": {
+		"tailwindcss": "^4.0.0",
 		"@tailwindcss/postcss": "^4.0.0"
 	}
 }
