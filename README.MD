@@ -1,29 +1,32 @@
-<p><img src="http://tailpress.io/images/tailpress100.svg" width="260" alt="TailPress"></p>
+<p align="center"><a href="https://tailpress.io" target="_blank"><img src="https://tailpress.io/images/tailpress100.svg" width="260" alt="TailPress"></a></p>
 
-[![GitHub release](https://img.shields.io/github/release/jeffreyvr/tailpress?include_prereleases=&sort=semver)](https://github.com/jeffreyvr/tailpress/releases/)
-[![License](https://img.shields.io/badge/License-MIT-blue)](#license)
+<p align="center">
+<a href="https://github.com/jeffreyvr/tailpress/releases/"><img src="https://img.shields.io/github/release/jeffreyvr/tailpress?include_prereleases=&sort=semver" alt="GitHub release"></a>
+<a href="#license"><img src="https://img.shields.io/badge/License-MIT-blue" alt="License"></a>
+</p>
 
-# Introduction
+## About TailPress
 
 TailPress is a minimal boilerplate theme for WordPress using [Tailwind CSS](https://tailwindcss.com/).
 
 ## Getting started
 
-### Using the installer
+You can use the TailPress [installer](#installer), or you can simply [clone](#clone-repository) this repository.
 
-You can get started using the installer (using composer):
+### Installer
 
-```bash
-composer global require jeffreyvanrossum/tailpress-installer
+To use installer, you need to install it globally via Composer:
 
-tailpress new example-theme
-```
+`composer global require jeffreyvanrossum/tailpress-installer`
+
+Afterwards, you can run:
+
+`tailpress new example-theme`
 
 *If the tailpress command is not found, make sure to place Composer's global vendor bin in your `$PATH` ([see](#command-tailpress-not-found)).*
 
 Flags you can pass when using the installer:
 - Set a theme name `--name="Example Theme"`
-- Choose your compiler, mix or esbuild: `--compiler="esbuild"`
 - Initialize a git repository `--git`
 - Set the git branch name `--branch="main"`
 
@@ -34,28 +37,26 @@ Once your theme is ready, don't forget to cd into the directory.
 
 You will be asked if you would like to have WordPress installed as well. Keep in mind that you still need a local development environment for PHP and MySQL.
 
-### Regular method
+### Clone repository
 
 * Clone repo `git clone https://github.com/jeffreyvr/tailpress.git && cd tailpress`
 * Run `rm -rf .git` to remove git (or `rmdir .git` for Windows)
 * Run `npm install`
 * Run `npm run watch` to start developing
 
-### General
+## Resources and compiling
 
 You will find the editable CSS and Javascript files within the `/resources` folder.
 
 Before you use your theme in production, make sure you run `npm run production`.
 
-## NPM Scripts
-
 There are several NPM scripts available. You'll find the full list in the `package.json` file under "scripts". A script is executed through the terminal by running `npm run script-name`.
 
 | Script     | Description                                                                    |
 |------------|--------------------------------------------------------------------------------|
-| production | Creates a production (minified) build of app.js, app.css and editor-style.css. |
+| production | Creates a production (minified) build of app.js, app.css and editor-style.css.  |
 | dev        | Creates a development build of app.js, app.css and editor-style.css.           |
-| watch      | Runs several watch scripts concurrently.                                       |
+| watch      | Recompiles after changes are made.                                             |
 
 ## Tips
 
@@ -87,7 +88,6 @@ You could also find the composer's global installation path by running `composer
 * [Screencasts](https://www.youtube.com/playlist?list=PL6GBdOp044SHIOSCZejodwr1HcYsC43wG)
 * [Tailwind CSS Documentation](https://tailwindcss.com/docs)
 * [Laravel Mix Documentation](https://laravel-mix.com)
-* [Esbuild Documentation](https://esbuild.github.io)
 
 ## Contributors
 

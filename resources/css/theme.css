@@ -1,0 +1,27 @@
+@theme {
+    --breakpoint-xs: 480px;
+    --breakpoint-sm: 600px;
+    --breakpoint-md: 782px;
+    --breakpoint-lg: var(--wp--style--global--content-size);
+    --breakpoint-xl: var(--wp--style--global--wide-size);
+    --breakpoint-2xl: 1440px;
+
+    --color-primary: var(--wp--preset--color--primary);
+    --color-secondary: var(--wp--preset--color--secondary);
+    --color-dark: var(--wp--preset--color--dark);
+    --color-light: var(--wp--preset--color--light);
+
+    --text-xs: var(--wp--preset--font-size--xs, 0.75rem);
+    --text-sm: var(--wp--preset--font-size--sm, 0.875rem);
+    --text-base: var(--wp--preset--font-size--base, 1rem);
+    --text-lg: var(--wp--preset--font-size--lg, 1.125rem);
+    --text-xl: var(--wp--preset--font-size--xl, 1.25rem);
+    --text-2xl: var(--wp--preset--font-size--2xl, 1.5rem);
+    --text-3xl: var(--wp--preset--font-size--3xl, 1.875rem);
+    --text-4xl: var(--wp--preset--font-size--4xl, 2.25rem);
+    --text-5xl: var(--wp--preset--font-size--5xl, 3rem);
+    --text-6xl: var(--wp--preset--font-size--6xl, 3.75rem);
+    --text-7xl: var(--wp--preset--font-size--7xl, 4.5rem);
+    --text-8xl: var(--wp--preset--font-size--8xl, 6rem);
+    --text-9xl: var(--wp--preset--font-size--9xl, 8rem);
+}
