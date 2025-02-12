@@ -19,13 +19,13 @@ mix.postCss("resources/css/app.css", "css", postCss);
 
 mix.postCss("resources/css/editor-style.css", "css", postCss);
 
-mix.browserSync({
-    proxy: 'http://tailpress.test',
-    host: 'tailpress.test',
-    open: 'external',
-    port: 8000,
-    files: ["*.php", "**/*.php"]
-});
+// mix.browserSync({
+//     proxy: 'http://tailpress.test',
+//     host: 'tailpress.test',
+//     open: 'external',
+//     port: 8000,
+//     files: ["*.php", "**/*.php"]
+// });
 
 if (mix.inProduction()) {
     mix.version();
