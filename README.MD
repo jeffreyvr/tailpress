@@ -1,8 +1,8 @@
 <p align="center"><a href="https://tailpress.io" target="_blank"><img src="https://tailpress.io/images/tailpress100.svg" width="260" alt="TailPress"></a></p>
 
 <p align="center">
-[![GitHub release](https://img.shields.io/github/release/jeffreyvr/tailpress?include_prereleases=&sort=semver)](https://github.com/jeffreyvr/tailpress/releases/)
-[![License](https://img.shields.io/badge/License-MIT-blue)](#license)
+<a href="https://github.com/jeffreyvr/tailpress/releases/"><img src="https://img.shields.io/github/release/jeffreyvr/tailpress?include_prereleases=&sort=semver" alt="GitHub release"></a>
+<a href="#license"><img src="https://img.shields.io/badge/License-MIT-blue" alt="License"></a>
 </p>
 
 ## About TailPress
