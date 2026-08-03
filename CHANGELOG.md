@@ -4,6 +4,15 @@ All notable changes to TailPress will be documented in this file.
 
 ## Unreleased
 
+## 5.0.4
+
+- Address npm security advisories (stay on Vite 6.x)
+  - `vite` → 6.4.3
+  - `postcss` → 8.5.25
+  - `picomatch` → 4.0.5
+  - `rollup` → 4.62.4
+- Bump `tailwindcss` and `@tailwindcss/vite` to 4.3.3
+
 ## 5.0.3
 
 - Bump `tailpress/framework` to 5.0.5
