@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c1c2be87d35836a12319da18426fd656",
+    "content-hash": "89c0d976710c86678921ab606c8f25c7",
     "packages": [
         {
             "name": "automattic/jetpack-autoloader",
@@ -772,16 +772,16 @@
         },
         {
             "name": "tailpress/framework",
-            "version": "5.0.4",
+            "version": "5.0.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/tailpress/framework.git",
-                "reference": "9d47bdbffbe9790cccd81831b48ff60f9f0a21bb"
+                "reference": "9e3359514e62f760f891181deb39733e8c8c7916"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tailpress/framework/zipball/9d47bdbffbe9790cccd81831b48ff60f9f0a21bb",
-                "reference": "9d47bdbffbe9790cccd81831b48ff60f9f0a21bb",
+                "url": "https://api.github.com/repos/tailpress/framework/zipball/9e3359514e62f760f891181deb39733e8c8c7916",
+                "reference": "9e3359514e62f760f891181deb39733e8c8c7916",
                 "shasum": ""
             },
             "require": {
@@ -814,9 +814,9 @@
             "description": "The framework package for TailPress.",
             "support": {
                 "issues": "https://github.com/tailpress/framework/issues",
-                "source": "https://github.com/tailpress/framework/tree/5.0.4"
+                "source": "https://github.com/tailpress/framework/tree/5.0.5"
             },
-            "time": "2025-05-19T12:53:42+00:00"
+            "time": "2026-08-03T04:35:09+00:00"
         }
     ],
     "packages-dev": [
@@ -949,5 +949,5 @@
         "php": ">=8.0.2"
     },
     "platform-dev": {},
-    "plugin-api-version": "2.6.0"
+    "plugin-api-version": "2.9.0"
 }

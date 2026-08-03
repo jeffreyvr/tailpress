@@ -4,6 +4,22 @@ All notable changes to TailPress will be documented in this file.
 
 ## Unreleased
 
+## 5.0.3
+
+- Bump `tailpress/framework` to 5.0.5
+- Allow script dependencies/args when registering assets via the framework by @joezappie in [tailpress/framework#7](https://github.com/tailpress/framework/pull/7)
+- Fix Vite dev scripts loading as ES modules (correct handle matching) by @weber-s in [tailpress/framework#8](https://github.com/tailpress/framework/pull/8)
+
+## 5.0.2
+
+- Only render the page header when it has content by @joshsmith01 in #285
+- Add base font family to editor styles
+- Bump `tailpress/framework`
+
+## 5.0.1
+
+- Improve GitHub release workflow
+
 ## 5.0.0
 
 - Major update to default styling and template files
